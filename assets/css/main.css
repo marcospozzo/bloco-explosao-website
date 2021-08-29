@@ -1554,6 +1554,7 @@ footer {
 .box.post header {
   padding-top: 1em;
   margin: 0 0 2em 0;
+  text-align: center;
 }
 
 .box.post h2 {
@@ -1607,30 +1608,6 @@ input[type="reset"]:active,
 button:active,
 .button:active {
   background: #c51349;
-}
-
-input[type="button"].alt,
-input[type="submit"].alt,
-input[type="reset"].alt,
-button.alt,
-.button.alt {
-  background: #252122;
-}
-
-input[type="button"].alt:hover,
-input[type="submit"].alt:hover,
-input[type="reset"].alt:hover,
-button.alt:hover,
-.button.alt:hover {
-  background: #353132;
-}
-
-input[type="button"].alt:active,
-input[type="submit"].alt:active,
-input[type="reset"].alt:active,
-button.alt:active,
-.button.alt:active {
-  background: #151112;
 }
 
 input[type="button"].icon:before,
