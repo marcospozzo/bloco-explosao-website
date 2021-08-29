@@ -288,7 +288,7 @@ h3 {
 }
 
 a {
-  color: #d52349;
+  color: _palette(link);
   text-decoration: underline;
 
   &:hover {
@@ -545,7 +545,7 @@ button,
   cursor: pointer;
   border: 0;
   border-radius: 5px;
-  background: #d52349;
+  background: _palette(link);
   color: #fff !important;
   font-weight: 700;
   outline: 0;
@@ -729,7 +729,7 @@ ul.dates {
     position: absolute;
     left: 0;
     top: 1.3em;
-    background-color: #d52349;
+    background-color: _palette(link);
     height: 3.5em;
     text-align: center;
     color: #fff;
@@ -743,7 +743,7 @@ ul.dates {
       position: absolute;
       bottom: 0;
       right: -1.2em;
-      border-left: solid 1.25em #d52349;
+      border-left: solid 1.25em _palette(link);
       border-top: solid 1.8em transparent;
       border-bottom: solid 1.8em transparent;
     }
@@ -905,7 +905,7 @@ ul.social {
   &.featured {
     position: relative;
     display: inline-block;
-    background-color: #d52349;
+    background-color: _palette(link);
     width: 9em;
     padding: 1.75em 0 0.75em 0;
     border-top-left-radius: 5px;
@@ -924,7 +924,7 @@ ul.social {
       position: absolute;
       bottom: -1.95em;
       left: 0;
-      border-top: solid 2em #d52349;
+      border-top: solid 2em _palette(link);
       border-left: solid 4.5em transparent;
       border-right: solid 4.5em transparent;
     }
@@ -959,9 +959,9 @@ ul.social {
 
 #header {
   position: relative;
-  background: #f6ca32;
+  background: _palette(bg);
   border-bottom: solid 1px #ccc;
-  padding: 5em 0 4em 0;
+  padding: 2em 0 4em 0;
   text-align: center;
 
   h1 {
@@ -976,7 +976,7 @@ ul.social {
 /* Nav */
 
 #nav {
-  margin: 2.5em 0 0 0;
+  margin: 1em 0 0 0;
 
   > ul {
     margin: 0;
@@ -1014,7 +1014,7 @@ ul.social {
 
       &.current {
         > a {
-          background: #d52349;
+          background: _palette(link);
           color: #fff !important;
           font-weight: 700;
         }
@@ -1098,7 +1098,7 @@ ul.social {
     }
 
     p {
-      color: #d52349;
+      color: _palette(link);
       padding: 0;
       font-style: normal;
       margin: 0;
