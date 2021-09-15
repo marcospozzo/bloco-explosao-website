@@ -232,7 +232,8 @@ select {
 
 strong,
 b {
-  color: #252122;
+  // color: #252122;
+  color: white;
   font-weight: 400;
 }
 
@@ -383,7 +384,7 @@ form {
     font-size: 1em;
     border-radius: 5px;
     border: solid 1px #dddddd;
-    background: #fff;
+    background: _palette(fg-alt);
     width: 100%;
 
     &:focus {
@@ -730,6 +731,15 @@ ul.dates {
     padding: 1.3em 0 1.3em 6.75em;
   }
 
+  &.past-performances {
+    li {
+      padding: 0px;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .date {
     display: block;
     position: absolute;
@@ -738,7 +748,8 @@ ul.dates {
     background-color: _palette(link);
     height: 3.5em;
     text-align: center;
-    color: #fff;
+    // color: #fff;
+    color: black;
     line-height: 1em;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -757,7 +768,7 @@ ul.dates {
     strong {
       display: block;
       font-size: 1.75em;
-      padding-top: 0.15em;
+      padding-top: 0.2em;
     }
   }
 
@@ -979,6 +990,15 @@ ul.social {
   }
 }
 
+// duplicated code from just above here
+h1 {
+  color: #252122;
+  font-weight: 900;
+  font-size: 2.5em;
+  letter-spacing: -0.035em;
+  line-height: 1;
+}
+
 /* Nav */
 
 #nav {
@@ -1014,7 +1034,7 @@ ul.social {
       &:hover,
       &.active {
         > a {
-          background: #f3f3f3;
+          background: _palette(fg-alt);
         }
       }
 
@@ -1261,15 +1281,162 @@ ul.social {
   text-align: center;
   margin: 3em 0 2em 0;
 
-  ul.links {
+  ul.links,
+  form {
     display: inline-block;
     // background: #2c2929;
     // background: rgba(255, 255, 255, 0.05);
     background: _palette(accent);
     border-radius: 5px;
     margin: 0;
-    padding: 0.85em 2.25em 0.85em 2.25em;
+    padding: 1.85em 2.25em 1.85em 2.25em;
   }
+}
+
+/* Form Marc */
+@at-root ///
+/// Big Picture by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Form */
+
+.mielcita {
+  display: none;
+}
+
+form {
+  margin: 0 0 _size(element-margin) 0;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+
+  > .fields {
+    $gutter: (_size(element-margin) * 0.75);
+
+    @include vendor("display", "flex");
+    @include vendor("flex-wrap", "wrap");
+    width: calc(100% + #{$gutter * 2});
+    margin: ($gutter * -1) 0 _size(element-margin) ($gutter * -1);
+
+    > .field {
+      @include vendor("flex-grow", "0");
+      @include vendor("flex-shrink", "0");
+      padding: $gutter 0 0 $gutter;
+      width: calc(100% - #{$gutter * 1});
+
+      &.half {
+        width: calc(50% - #{$gutter * 0.5});
+      }
+
+      &.third {
+        width: calc(#{100% / 3} - #{$gutter * (1 / 3)});
+      }
+
+      &.quarter {
+        width: calc(25% - #{$gutter * 0.25});
+      }
+    }
+  }
+
+  @include breakpoint("<=small") {
+    > .fields {
+      $gutter: (_size(element-margin) * 0.5);
+
+      width: calc(100% + #{$gutter * 2});
+      margin: ($gutter * -1) 0 _size(element-margin) ($gutter * -1);
+
+      > .field {
+        padding: $gutter 0 0 $gutter;
+        width: calc(100% - #{$gutter * 1});
+
+        &.half {
+          width: calc(100% - #{$gutter * 1});
+        }
+
+        &.third {
+          width: calc(100% - #{$gutter * 1});
+        }
+
+        &.quarter {
+          width: calc(100% - #{$gutter * 1});
+        }
+      }
+    }
+  }
+}
+
+label {
+  display: block;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="search"],
+input[type="url"],
+select,
+textarea {
+  @include vendor("appearance", "none");
+  @include vendor(
+    "transition",
+    (
+      "border-color #{_duration(transition)} ease-in-out",
+      "color #{_duration(transition)} ease-in-out"
+    )
+  );
+  color: _palette(fg);
+  display: block;
+  width: 100%;
+  padding: 0.65em 0.75em;
+  background: none;
+  border: solid 2px _palette(border);
+  color: inherit;
+  border-radius: 0.5em;
+  outline: none;
+  resize: none;
+  height: 3em;
+
+  &:focus {
+    border-color: _palette(accent);
+  }
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="search"],
+input[type="url"],
+select {
+  line-height: 1.35em;
+}
+
+textarea {
+  min-height: 8em;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
+::-webkit-input-placeholder {
+  opacity: 0.375;
+}
+
+:-moz-placeholder {
+  opacity: 0.375;
+}
+
+::-moz-placeholder {
+  opacity: 0.375;
+}
+
+:-ms-input-placeholder {
+  opacity: 0.375;
 }
 
 /* XLarge */
@@ -1834,4 +2001,8 @@ ul.social {
   #footer {
     padding: 40px 0 20px 0;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
