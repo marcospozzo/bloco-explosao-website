@@ -560,7 +560,7 @@ button,
   @include vendor("transition", "background-color .25s ease-in-out");
 
   &:hover {
-    background: #e53359;
+    background: _palette(link-alt);
   }
 
   &:active {
@@ -1043,6 +1043,11 @@ h1 {
           background: _palette(link);
           color: #fff !important;
           font-weight: 700;
+
+          &:hover,
+          &.active {
+            background: _palette(link-alt);
+          }
         }
       }
     }

@@ -2102,6 +2102,10 @@ h1 {
   font-weight: 700;
 }
 
+#nav > ul > li.current > a:hover, #nav > ul > li.current > a.active {
+  background: #e53359;
+}
+
 .dropotron {
   border-radius: 5px;
   background-color: #252122;
