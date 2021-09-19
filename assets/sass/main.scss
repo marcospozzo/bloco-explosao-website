@@ -206,7 +206,7 @@ html {
 
 body {
   background: #252122;
-  background-image: url("images/bg02.png");
+  // background-image: url("images/bg02.png");
 
   // Stops initial animations until page loads.
   &.is-preload {
@@ -682,6 +682,10 @@ ul.links {
       border-left: 0;
       padding-left: 0;
       margin-left: 0;
+    }
+
+    a.icon {
+      margin: 0 0 0 1em;
     }
   }
 }
@@ -1211,15 +1215,19 @@ h1 {
     top: 0;
     left: 0;
     width: 100%;
-    background: url("images/bg01.png");
+    // background: url("images/bg01.png");
     background-size: 100% 100%;
     z-index: 0;
     opacity: 0.1;
   }
 
+  &.first-main {
+    padding-bottom: 0;
+  }
+
   .major {
     h2 {
-      background: #f7f7f7 url("images/bg02.png");
+      // background: #f7f7f7 url("images/bg02.png");
     }
   }
 }
@@ -1238,7 +1246,7 @@ h1 {
     top: 0;
     left: 0;
     width: 100%;
-    background: url("images/bg01.png");
+    // background: url("images/bg01.png");
     background-size: 100% 100%;
     z-index: 0;
     opacity: 0.5;
@@ -1716,7 +1724,7 @@ textarea {
     width: _size(navPanel);
     z-index: _misc(z-index-base) + 2;
     color: #858484;
-    background-image: url("images/bg02.png");
+    // background-image: url("images/bg02.png");
     box-shadow: inset -3px 0px 5px 0px rgba(0, 0, 0, 0.35);
 
     .link {

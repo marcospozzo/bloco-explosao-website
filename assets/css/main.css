@@ -172,7 +172,6 @@ html {
 
 body {
   background: #252122;
-  background-image: url("images/bg02.png");
 }
 
 body.is-preload *,
@@ -1741,6 +1740,10 @@ ul.links li:first-child {
   margin-left: 0;
 }
 
+ul.links li a.icon {
+  margin: 0 0 0 1em;
+}
+
 /* Contact */
 ul.contact {
   list-style: none;
@@ -2258,14 +2261,13 @@ h1 {
   top: 0;
   left: 0;
   width: 100%;
-  background: url("images/bg01.png");
   background-size: 100% 100%;
   z-index: 0;
   opacity: 0.1;
 }
 
-#main .major h2 {
-  background: #f7f7f7 url("images/bg02.png");
+#main.first-main {
+  padding-bottom: 0;
 }
 
 /* Footer */
@@ -2282,7 +2284,6 @@ h1 {
   top: 0;
   left: 0;
   width: 100%;
-  background: url("images/bg01.png");
   background-size: 100% 100%;
   z-index: 0;
   opacity: 0.5;
@@ -2713,7 +2714,6 @@ textarea {
     width: 275px;
     z-index: 10002;
     color: #858484;
-    background-image: url("images/bg02.png");
     -webkit-box-shadow: inset -3px 0px 5px 0px rgba(0, 0, 0, 0.35);
             box-shadow: inset -3px 0px 5px 0px rgba(0, 0, 0, 0.35);
   }
