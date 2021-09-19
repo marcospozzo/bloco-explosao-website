@@ -1745,7 +1745,14 @@ ul.links li:first-child {
 }
 
 ul.links li a.icon {
+  opacity: 0.8;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
   margin: 0 0 0 1em;
+}
+
+ul.links li a.icon:hover {
+  opacity: 1;
 }
 
 /* Contact */

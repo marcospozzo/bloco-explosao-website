@@ -691,7 +691,13 @@ ul.links {
     }
 
     a.icon {
+      opacity: 0.8;
+      transition: opacity 0.2s;
       margin: 0 0 0 1em;
+
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 }
