@@ -260,18 +260,6 @@ a:hover {
   text-decoration: none;
 }
 
-a img {
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-
-a img:hover {
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
-}
-
 a.logo img {
   -webkit-transform: none;
           transform: none;
@@ -1536,6 +1524,19 @@ article:last-child {
   height: 150px;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.portfolio > * img:hover {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.portfolio > * p {
+  min-height: 5em;
 }
 
 header {
@@ -1640,10 +1641,6 @@ footer {
 .box.post header > p {
   margin-top: 1.25em;
   font-size: 1.25em;
-}
-
-.box p {
-  min-height: 5em;
 }
 
 .box footer ul.actions {

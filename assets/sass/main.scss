@@ -296,14 +296,6 @@ a {
     text-decoration: none;
   }
 
-  img {
-    transition: all 0.2s ease;
-    &:hover {
-      transition: all 0.3s ease;
-      transform: scale(1.01);
-    }
-  }
-
   &.logo {
     img {
       transform: none;
@@ -487,6 +479,16 @@ article {
 .portfolio > * img {
   height: 150px;
   object-fit: cover;
+
+  transition: all 0.2s ease;
+  &:hover {
+    transition: all 0.3s ease;
+    transform: scale(1.01);
+  }
+}
+
+.portfolio > * p {
+  min-height: 5em;
 }
 
 header {
@@ -585,10 +587,6 @@ footer {
         font-size: 1.25em;
       }
     }
-  }
-
-  p {
-    min-height: 5em;
   }
 
   footer {
