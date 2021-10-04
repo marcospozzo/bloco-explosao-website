@@ -260,6 +260,23 @@ a:hover {
   text-decoration: none;
 }
 
+a img {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+a img:hover {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+a.logo img {
+  -webkit-transform: none;
+          transform: none;
+}
+
 br.clear {
   clear: both;
 }
@@ -1558,7 +1575,8 @@ footer {
   background: #ffffff;
   border-bottom: solid 1px #ccc;
   padding: 2.75em 1.75em 2.75em 1.75em;
-  border-radius: 5px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
 }
 
 .box.leader {
@@ -1606,10 +1624,6 @@ footer {
   left: 1.75em;
   top: 1.75em;
   margin: -4.5em 0 4.25em -3.5em;
-}
-
-.box.post {
-  border-radius: 5px;
 }
 
 .box.post header {
@@ -1723,6 +1737,7 @@ button.large,
 .image {
   display: inline-block;
   outline: 0;
+  overflow: hidden;
 }
 
 .image img {

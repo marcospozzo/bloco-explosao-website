@@ -295,6 +295,20 @@ a {
   &:hover {
     text-decoration: none;
   }
+
+  img {
+    transition: all 0.2s ease;
+    &:hover {
+      transition: all 0.3s ease;
+      transform: scale(1.01);
+    }
+  }
+
+  &.logo {
+    img {
+      transform: none;
+    }
+  }
 }
 
 br.clear {
@@ -513,7 +527,8 @@ footer {
   background: #ffffff;
   border-bottom: solid 1px #ccc;
   padding: 2.75em 1.75em 2.75em 1.75em;
-  border-radius: 5px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
 
   &.leader {
     display: flex;
@@ -553,8 +568,6 @@ footer {
   }
 
   &.post {
-    border-radius: 5px;
-
     header {
       padding-top: 1em;
       margin: 0 0 2em 0;
@@ -647,11 +660,11 @@ button,
 .image {
   display: inline-block;
   outline: 0;
+  overflow: hidden;
 
   img {
     display: block;
     width: 100%;
-    // border-radius: 5px;
     border-radius: 5px 5px 0 0;
   }
 
