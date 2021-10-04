@@ -349,7 +349,8 @@ table {
 /* Row */
 
 .row {
-  &.leaders {
+  &.leaders,
+  &.media {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -536,7 +537,8 @@ footer {
     display: flex;
     width: 100%;
 
-    .profile-box {
+    .profile-box,
+    .media-box {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -550,12 +552,23 @@ footer {
       }
     }
 
+    .media-box {
+      img {
+        border-radius: 0;
+      }
+    }
+
     div {
       width: 70%;
     }
 
     &.two {
       flex-direction: row-reverse;
+      .profile-box,
+      .media-box {
+        padding-left: inherit;
+        padding-right: 0;
+      }
     }
   }
 
@@ -1288,12 +1301,6 @@ h1 {
 
   &.first-main {
     padding-bottom: 0;
-  }
-
-  .major {
-    h2 {
-      // background: #f7f7f7 url("images/bg02.png");
-    }
   }
 }
 
