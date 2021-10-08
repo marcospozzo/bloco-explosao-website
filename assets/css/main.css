@@ -1601,6 +1601,12 @@ footer {
           align-items: center;
   width: 30%;
   padding-right: inherit;
+  text-align: center;
+}
+
+.box.leader .profile-box p,
+.box.leader .media-box p {
+  font-style: italic;
 }
 
 .box.leader .profile-box img,

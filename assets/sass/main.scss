@@ -544,6 +544,11 @@ footer {
       align-items: center;
       width: 30%;
       padding-right: inherit;
+      text-align: center;
+
+      p {
+        font-style: italic;
+      }
 
       img {
         border-radius: 50%;
