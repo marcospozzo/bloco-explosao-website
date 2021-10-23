@@ -119,33 +119,112 @@
                   <h2>Photos</h2>
                 </header>
                 <div class="row media">
-                  <div class="col-12-small">
+                  <div class="col-12">
                     <section class="box">
-                      <div>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Asperiores fuga molestiae enim at cupiditate
-                          nihil optio assumenda amet quod et suscipit
-                          dignissimos rerum maxime unde beatae corporis illum
-                          iure nobis, facilis nulla fugiat laudantium libero
-                          harum. Nisi laborum, reiciendis sed quibusdam quae
-                          voluptas id possimus voluptatum culpa deleniti est
-                          adipisci reprehenderit rerum recusandae enim unde
-                          ullam numquam magni sit, blanditiis dolorem eos
-                          nesciunt! Omnis, debitis error consequuntur earum
-                          tempore illo quod sed culpa, voluptatibus eveniet
-                          corrupti dolorem non recusandae reiciendis maxime quae
-                          iste accusantium temporibus amet eum repudiandae ut
-                          animi, ex nihil! Molestiae perspiciatis pariatur ex
-                          porro atque quos ducimus numquam est mollitia laborum
-                          at voluptate, voluptatum saepe sed esse dignissimos
-                          distinctio adipisci tenetur quam non quasi, beatae
-                          doloribus ullam! Maxime doloribus perferendis,
-                          reprehenderit illum aspernatur quis maiores beatae
-                          sunt culpa. Nihil vero consequuntur, laborum iusto vel
-                          cupiditate corporis iste eos in ipsum adipisci, nulla
-                          quo temporibus, odio neque quos.
-                        </p>
+                      <!-- Images used to open the lightbox -->
+                      <div class="row-carousel">
+                        <div class="column-carousel">
+                          <img
+                            src="images/media/thumbnails/thumb.png"
+                            onclick="openModal();currentSlide(1)"
+                            class="hover-shadow"
+                          />
+                        </div>
+                        <div class="column-carousel">
+                          <img
+                            src="images/media/thumbnails/thumb.png"
+                            onclick="openModal();currentSlide(2)"
+                            class="hover-shadow"
+                          />
+                        </div>
+                        <div class="column-carousel">
+                          <img
+                            src="images/media/thumbnails/thumb.png"
+                            onclick="openModal();currentSlide(3)"
+                            class="hover-shadow"
+                          />
+                        </div>
+                        <div class="column-carousel">
+                          <img
+                            src="images/media/thumbnails/thumb.png"
+                            onclick="openModal();currentSlide(4)"
+                            class="hover-shadow"
+                          />
+                        </div>
+                      </div>
+
+                      <!-- The Modal/Lightbox -->
+                      <div id="myModal" class="modal">
+                        <span class="close cursor" onclick="closeModal()"
+                          >&times;</span
+                        >
+                        <div class="modal-content">
+                          <div class="mySlides">
+                            <div class="numbertext">1 / 4</div>
+                            <img src="img1_wide.jpg" style="width: 100%" />
+                          </div>
+
+                          <div class="mySlides">
+                            <div class="numbertext">2 / 4</div>
+                            <img src="img2_wide.jpg" style="width: 100%" />
+                          </div>
+
+                          <div class="mySlides">
+                            <div class="numbertext">3 / 4</div>
+                            <img src="img3_wide.jpg" style="width: 100%" />
+                          </div>
+
+                          <div class="mySlides">
+                            <div class="numbertext">4 / 4</div>
+                            <img src="img4_wide.jpg" style="width: 100%" />
+                          </div>
+
+                          <!-- Next/previous controls -->
+                          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                          <!-- Caption text -->
+                          <div class="caption-container">
+                            <p id="caption"></p>
+                          </div>
+
+                          <!-- Thumbnail image controls -->
+                          <div class="column-carousel">
+                            <img
+                              class="demo"
+                              src="img1.jpg"
+                              onclick="currentSlide(1)"
+                              alt="Nature"
+                            />
+                          </div>
+
+                          <div class="column-carousel">
+                            <img
+                              class="demo"
+                              src="img2.jpg"
+                              onclick="currentSlide(2)"
+                              alt="Snow"
+                            />
+                          </div>
+
+                          <div class="column-carousel">
+                            <img
+                              class="demo"
+                              src="img3.jpg"
+                              onclick="currentSlide(3)"
+                              alt="Mountains"
+                            />
+                          </div>
+
+                          <div class="column-carousel">
+                            <img
+                              class="demo"
+                              src="img4.jpg"
+                              onclick="currentSlide(4)"
+                              alt="Lights"
+                            />
+                          </div>
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -161,31 +240,52 @@
                 <div class="row media">
                   <div class="col-12-small">
                     <section class="box">
-                      <div>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Asperiores fuga molestiae enim at cupiditate
-                          nihil optio assumenda amet quod et suscipit
-                          dignissimos rerum maxime unde beatae corporis illum
-                          iure nobis, facilis nulla fugiat laudantium libero
-                          harum. Nisi laborum, reiciendis sed quibusdam quae
-                          voluptas id possimus voluptatum culpa deleniti est
-                          adipisci reprehenderit rerum recusandae enim unde
-                          ullam numquam magni sit, blanditiis dolorem eos
-                          nesciunt! Omnis, debitis error consequuntur earum
-                          tempore illo quod sed culpa, voluptatibus eveniet
-                          corrupti dolorem non recusandae reiciendis maxime quae
-                          iste accusantium temporibus amet eum repudiandae ut
-                          animi, ex nihil! Molestiae perspiciatis pariatur ex
-                          porro atque quos ducimus numquam est mollitia laborum
-                          at voluptate, voluptatum saepe sed esse dignissimos
-                          distinctio adipisci tenetur quam non quasi, beatae
-                          doloribus ullam! Maxime doloribus perferendis,
-                          reprehenderit illum aspernatur quis maiores beatae
-                          sunt culpa. Nihil vero consequuntur, laborum iusto vel
-                          cupiditate corporis iste eos in ipsum adipisci, nulla
-                          quo temporibus, odio neque quos.
-                        </p>
+                      <div class="video-iframe">
+                        <iframe
+                          width="560"
+                          height="315"
+                          src="https://www.youtube.com/embed/6T03Ul-umlA"
+                          title="YouTube video player"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen
+                        ></iframe>
+                        <iframe
+                          width="560"
+                          height="315"
+                          src="https://www.youtube.com/embed/gRxg2Xea3Tk"
+                          title="YouTube video player"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen
+                        ></iframe>
+                        <iframe
+                          width="560"
+                          height="315"
+                          src="https://www.youtube.com/embed/qlGns1dAs3c"
+                          title="YouTube video player"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen
+                        ></iframe>
+                        <iframe
+                          width="560"
+                          height="315"
+                          src="https://www.youtube.com/embed/nud5G0fNq_w"
+                          title="YouTube video player"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen
+                        ></iframe>
+                        <iframe
+                          width="560"
+                          height="315"
+                          src="https://www.youtube.com/embed/HFpu3PJUBRw"
+                          title="YouTube video player"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen
+                        ></iframe>
                       </div>
                     </section>
                   </div>
