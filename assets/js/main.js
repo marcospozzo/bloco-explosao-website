@@ -121,3 +121,21 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
   captionText.innerHTML = dots[slideIndex - 1].alt;
 }
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    closeModal();
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "ArrowLeft") {
+    plusSlides(-1);
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "ArrowRight") {
+    plusSlides(1);
+  }
+});

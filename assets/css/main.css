@@ -3082,20 +3082,22 @@ iframe {
   border-radius: 5px;
 }
 
-.row-carousel > .column-carousel {
-  padding: 0 8px;
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
 }
 
-.row-carousel:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Create four equal columns that floats next to eachother */
-.column-carousel {
-  float: left;
-  width: 25%;
+.single-image {
+  width: 32%;
+  cursor: pointer;
+  margin: 0.3em;
 }
 
 /* The Modal (background) */
@@ -3103,7 +3105,7 @@ iframe {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 100px;
+  padding-top: 4em;
   left: 0;
   top: 0;
   width: 100%;
@@ -3163,6 +3165,7 @@ iframe {
    -ms-user-select: none;
        user-select: none;
   -webkit-user-select: none;
+  text-decoration: none;
 }
 
 /* Position the "next button" to the right */
@@ -3192,15 +3195,6 @@ iframe {
   background-color: black;
   padding: 2px 16px;
   color: white;
-}
-
-img.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
 }
 
 img.hover-shadow {

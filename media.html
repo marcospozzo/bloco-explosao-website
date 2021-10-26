@@ -120,38 +120,39 @@
                 </header>
                 <div class="row media">
                   <div class="col-12">
-                    <section class="box">
+                    <section class="box gallery">
                       <!-- Images used to open the lightbox -->
-                      <div class="row-carousel">
-                        <div class="column-carousel">
-                          <img
-                            src="images/media/thumbnails/thumb.png"
-                            onclick="openModal();currentSlide(1)"
-                            class="hover-shadow"
-                          />
-                        </div>
-                        <div class="column-carousel">
-                          <img
-                            src="images/media/thumbnails/thumb.png"
-                            onclick="openModal();currentSlide(2)"
-                            class="hover-shadow"
-                          />
-                        </div>
-                        <div class="column-carousel">
-                          <img
-                            src="images/media/thumbnails/thumb.png"
-                            onclick="openModal();currentSlide(3)"
-                            class="hover-shadow"
-                          />
-                        </div>
-                        <div class="column-carousel">
-                          <img
-                            src="images/media/thumbnails/thumb.png"
-                            onclick="openModal();currentSlide(4)"
-                            class="hover-shadow"
-                          />
-                        </div>
-                      </div>
+                      <img
+                        class="single-image"
+                        src="/images/media/thumbnails/thumb1.jpg"
+                        onclick="openModal();currentSlide(1)"
+                        class="hover-shadow"
+                      />
+                      <img
+                        class="single-image"
+                        src="/images/media/thumbnails/thumb2.jpg"
+                        onclick="openModal();currentSlide(2)"
+                        class="hover-shadow"
+                      />
+
+                      <img
+                        class="single-image"
+                        src="/images/media/thumbnails/thumb3.jpg"
+                        onclick="openModal();currentSlide(3)"
+                        class="hover-shadow"
+                      />
+                      <img
+                        class="single-image"
+                        src="/images/media/thumbnails/thumb4.jpg"
+                        onclick="openModal();currentSlide(4)"
+                        class="hover-shadow"
+                      />
+                      <img
+                        class="single-image"
+                        src="/images/media/thumbnails/thumb5.jpg"
+                        onclick="openModal();currentSlide(4)"
+                        class="hover-shadow"
+                      />
 
                       <!-- The Modal/Lightbox -->
                       <div id="myModal" class="modal">
@@ -160,23 +161,53 @@
                         >
                         <div class="modal-content">
                           <div class="mySlides">
-                            <div class="numbertext">1 / 4</div>
-                            <img src="img1_wide.jpg" style="width: 100%" />
+                            <div class="numbertext">1 / 5</div>
+                            <img
+                              src="/images/media/image1.jpg"
+                              style="width: 100%"
+                              class="demo"
+                              alt="Performance at Brandenburg Gate"
+                            />
                           </div>
 
                           <div class="mySlides">
-                            <div class="numbertext">2 / 4</div>
-                            <img src="img2_wide.jpg" style="width: 100%" />
+                            <div class="numbertext">2 / 5</div>
+                            <img
+                              src="/images/media/image2.jpg"
+                              style="width: 100%"
+                              class="demo"
+                              alt="Performing in the street"
+                            />
                           </div>
 
                           <div class="mySlides">
-                            <div class="numbertext">3 / 4</div>
-                            <img src="img3_wide.jpg" style="width: 100%" />
+                            <div class="numbertext">3 / 5</div>
+                            <img
+                              src="/images/media/image3.jpg"
+                              style="width: 100%"
+                              class="demo"
+                              alt="Performing indoors"
+                            />
                           </div>
 
                           <div class="mySlides">
-                            <div class="numbertext">4 / 4</div>
-                            <img src="img4_wide.jpg" style="width: 100%" />
+                            <div class="numbertext">4 / 5</div>
+                            <img
+                              src="/images/media/image4.jpg"
+                              style="width: 100%"
+                              class="demo"
+                              alt="Festival"
+                            />
+                          </div>
+
+                          <div class="mySlides">
+                            <div class="numbertext">5 / 5</div>
+                            <img
+                              src="/images/media/image5.jpg"
+                              style="width: 100%"
+                              class="demo"
+                              alt="Trip to Brazil"
+                            />
                           </div>
 
                           <!-- Next/previous controls -->
@@ -186,43 +217,6 @@
                           <!-- Caption text -->
                           <div class="caption-container">
                             <p id="caption"></p>
-                          </div>
-
-                          <!-- Thumbnail image controls -->
-                          <div class="column-carousel">
-                            <img
-                              class="demo"
-                              src="img1.jpg"
-                              onclick="currentSlide(1)"
-                              alt="Nature"
-                            />
-                          </div>
-
-                          <div class="column-carousel">
-                            <img
-                              class="demo"
-                              src="img2.jpg"
-                              onclick="currentSlide(2)"
-                              alt="Snow"
-                            />
-                          </div>
-
-                          <div class="column-carousel">
-                            <img
-                              class="demo"
-                              src="img3.jpg"
-                              onclick="currentSlide(3)"
-                              alt="Mountains"
-                            />
-                          </div>
-
-                          <div class="column-carousel">
-                            <img
-                              class="demo"
-                              src="img4.jpg"
-                              onclick="currentSlide(4)"
-                              alt="Lights"
-                            />
                           </div>
                         </div>
                       </div>
