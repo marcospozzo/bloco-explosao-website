@@ -1592,6 +1592,21 @@ footer {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 736px) {
+  .box.leader {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .box.leader .profile-box,
@@ -1609,6 +1624,15 @@ footer {
   width: 30%;
   padding-right: inherit;
   text-align: center;
+  margin-bottom: 3em;
+}
+
+@media screen and (max-width: 736px) {
+  .box.leader .profile-box,
+  .box.leader .media-box {
+    width: 70%;
+    padding-right: 0;
+  }
 }
 
 .box.leader .profile-box p,
@@ -1631,6 +1655,12 @@ footer {
   width: 70%;
 }
 
+@media screen and (max-width: 736px) {
+  .box.leader div {
+    width: 100%;
+  }
+}
+
 .box.leader.two {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -1642,6 +1672,15 @@ footer {
 .box.leader.two .media-box {
   padding-left: inherit;
   padding-right: 0;
+}
+
+@media screen and (max-width: 736px) {
+  .box.leader.two {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .box .image.featured {
@@ -3107,6 +3146,12 @@ iframe {
   width: 45%;
 }
 
+@media screen and (max-width: 980px) {
+  .video-iframe iframe {
+    width: 100%;
+  }
+}
+
 .gallery {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3123,6 +3168,18 @@ iframe {
   width: 32%;
   cursor: pointer;
   margin: 0.3em;
+}
+
+@media screen and (max-width: 980px) {
+  .single-image {
+    width: 44%;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .single-image {
+    width: 100%;
+  }
 }
 
 /* The Modal (background) */

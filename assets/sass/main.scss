@@ -541,6 +541,12 @@ footer {
   &.leader {
     display: flex;
     width: 100%;
+    justify-content: center;
+
+    @include breakpoint("<=small") {
+      flex-direction: column;
+      align-items: center;
+    }
 
     .profile-box,
     .media-box {
@@ -550,6 +556,12 @@ footer {
       width: 30%;
       padding-right: inherit;
       text-align: center;
+      margin-bottom: 3em;
+
+      @include breakpoint("<=small") {
+        width: 70%;
+        padding-right: 0;
+      }
 
       p {
         font-style: italic;
@@ -570,6 +582,10 @@ footer {
 
     div {
       width: 70%;
+
+      @include breakpoint("<=small") {
+        width: 100%;
+      }
     }
 
     &.two {
@@ -578,6 +594,10 @@ footer {
       .media-box {
         padding-left: inherit;
         padding-right: 0;
+      }
+
+      @include breakpoint("<=small") {
+        flex-direction: column;
       }
     }
   }
@@ -2151,6 +2171,10 @@ iframe {
   iframe {
     margin: 1em;
     width: 45%;
+
+    @include breakpoint("<=medium") {
+      width: 100%;
+    }
   }
 }
 
@@ -2167,6 +2191,13 @@ iframe {
   width: 32%;
   cursor: pointer;
   margin: 0.3em;
+  @include breakpoint("<=medium") {
+    width: 44%;
+  }
+
+  @include breakpoint("<=small") {
+    width: 100%;
+  }
 }
 
 /* The Modal (background) */
