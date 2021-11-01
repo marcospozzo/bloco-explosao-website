@@ -3206,6 +3206,12 @@ iframe {
   max-width: 1200px;
 }
 
+@media screen and (max-width: 736px) {
+  .modal-content {
+    top: 5em;
+  }
+}
+
 /* The Close Button */
 .close {
   color: white;
@@ -3215,6 +3221,12 @@ iframe {
   font-size: 35px;
   font-weight: bold;
   z-index: 999;
+}
+
+@media screen and (max-width: 736px) {
+  .close {
+    top: 3em;
+  }
 }
 
 .close:hover,
