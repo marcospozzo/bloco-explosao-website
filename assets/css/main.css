@@ -3206,7 +3206,7 @@ iframe {
   max-width: 1200px;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 980px) {
   .modal-content {
     top: 5em;
   }
@@ -3223,7 +3223,7 @@ iframe {
   z-index: 999;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 980px) {
   .close {
     top: 3em;
   }
