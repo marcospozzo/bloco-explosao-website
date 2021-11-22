@@ -126,7 +126,7 @@
               <!-- Blog -->
               <section>
                 <header class="major">
-                  <h2>New course</h2>
+                  <h2>News</h2>
                 </header>
                 <div class="row">
                   <div class="col-12">
@@ -137,34 +137,13 @@
                           alt="group of six percussionists with their instruments looking at the camera standing in the grass"
                       /></a>
                       <header id="1">
-                        <h3>Would you like to participate?</h3>
+                        <h3 id="long-title"></h3>
                       </header>
-                      <p>
-                        Our group is open to all music enthusiasts. Come by, the
-                        first time it's free to sniff. Instruments and sticks
-                        are provided.
-                      </p>
-                      <p>
-                        New beginners course: every Thursday from 19-21h. Please
-                        <a href="#footer">contact us</a> if you are interested!
-                      </p>
-                      <p>
-                        From rhythmically gifted beginners to experienced drum
-                        enthusiasts, everyone is welcome. Fun and appearances
-                        are guaranteed. Come over! Performances Relaxed and from
-                        the beginning, we will get into the rhythms and
-                        techniques of the music of the Afro Blocos from Salvador
-                        da Bahia.
-                      </p>
-                      <p>
-                        On Tuesdays from 8 p.m. to 10 p.m., advanced learners
-                        rehearse. There it is quite possible for experienced
-                        players to join.
-                      </p>
-                      <p>
-                        The groups and workshops are led by the musicians Volker
-                        Conrath and Tobias Oliveira.
-                      </p>
+                      <p id="paragraph-one"></p>
+                      <p id="paragraph-two"></p>
+                      <p id="paragraph-three"></p>
+                      <p id="paragraph-four"></p>
+                      <p id="paragraph-five"></p>
                     </section>
                   </div>
                 </div>
@@ -173,6 +152,34 @@
           </div>
         </div>
       </section>
+
+      <script>
+        news()
+          .then((json) => {
+            document.getElementById("long-title").textContent =
+              json[0].longTitle;
+            document.getElementById("paragraph-one").textContent =
+              json[0].paragraphOne;
+            document.getElementById("paragraph-two").textContent =
+              json[0].paragraphTwo;
+            document.getElementById("paragraph-three").textContent =
+              json[0].paragraphThree;
+            document.getElementById("paragraph-four").textContent =
+              json[0].paragraphFour;
+            document.getElementById("paragraph-five").textContent =
+              json[0].paragraphFive;
+          })
+          .catch((error) => {
+            console.error(error);
+          });
+        async function news() {
+          const response = await fetch(
+            "https://opensheet.vercel.app/1dGxKu34AyicDELP3l9y60eZRdHEkhauAIAiDJTEsgi0/news"
+          );
+          const json = await response.json();
+          return json;
+        }
+      </script>
 
       <!-- Footer -->
       <section id="footer">

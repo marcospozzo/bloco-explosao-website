@@ -155,20 +155,17 @@
             <div class="col-4 col-12-medium">
               <!-- Sidebar -->
               <section class="box portfolio">
-                <a href="/new-course.html" class="image featured"
+                <a href="/news.html" class="image featured"
                   ><img
                     src="images/rehearsal-tempelhofer-feld.jpg"
                     alt="group of six percussionists with their instruments looking at the camera standing in the grass"
                 /></a>
                 <header>
-                  <h3>New course!</h3>
+                  <h3 id="title"></h3>
                 </header>
-                <p>
-                  New beginners course: every Thursday from 19-21h. Please
-                  <a href="#footer">contact us</a> if you are interested!
-                </p>
+                <p id="description"></p>
                 <footer>
-                  <a href="/new-course.html" class="button alt">Learn more</a>
+                  <a href="/news.html" class="button alt">Learn more</a>
                 </footer>
               </section>
               <section class="box facebook-iframe">
@@ -186,6 +183,25 @@
           </div>
         </div>
       </section>
+
+      <script>
+        news()
+          .then((json) => {
+            document.getElementById("title").textContent = json[0].title;
+            document.getElementById("description").textContent =
+              json[0].description;
+          })
+          .catch((error) => {
+            console.error(error);
+          });
+        async function news() {
+          const response = await fetch(
+            "https://opensheet.vercel.app/1dGxKu34AyicDELP3l9y60eZRdHEkhauAIAiDJTEsgi0/news"
+          );
+          const json = await response.json();
+          return json;
+        }
+      </script>
 
       <!-- Main -->
       <section id="main">
