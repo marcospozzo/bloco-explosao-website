@@ -2185,6 +2185,11 @@ iframe {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+
+  p {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .single-image {

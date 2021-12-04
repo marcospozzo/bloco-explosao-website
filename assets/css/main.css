@@ -3164,6 +3164,11 @@ iframe {
   width: 100%;
 }
 
+.gallery p {
+  width: 100%;
+  text-align: center;
+}
+
 .single-image {
   width: 32%;
   cursor: pointer;
