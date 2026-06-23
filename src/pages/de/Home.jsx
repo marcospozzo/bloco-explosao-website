@@ -125,7 +125,6 @@ export default function Home() {
                 </footer>
               </section>
 
-              <section className="box facebook-iframe">
                 <iframe
                   src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FBlocoExplosaoPerc&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
                   width="100%"
@@ -136,7 +135,6 @@ export default function Home() {
                   allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                   title="Facebook Page"
                 ></iframe>
-              </section>
             </div>
           </div>
         </div>
