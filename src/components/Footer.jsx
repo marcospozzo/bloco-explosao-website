@@ -16,7 +16,7 @@ export default function Footer({ lang = 'de' }) {
             <div id="copyright" className="contact-form">
               <ul className="links">
                 <li>
-                  <Link to="/impressum">&copy; 2026 Volker Conrath</Link>
+                  <Link to="/impressum">&copy; {new Date().getFullYear()} Volker Conrath</Link>
                 </li>
                 <li>
                   {isDE ? 'Website von' : 'Website by'}{' '}
