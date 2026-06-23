@@ -19,7 +19,7 @@ export default function BackToTop() {
   if (!visible) return null
 
   return (
-    <button onClick={scrollTop} id="myBtn" title="Go to top">
+    <button onClick={scrollTop} id="myBtn" title="Go to top" style={{ display: 'block' }}>
       <i className="fas fa-arrow-up"></i>
     </button>
   )

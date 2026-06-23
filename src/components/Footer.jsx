@@ -20,7 +20,7 @@ export default function Footer({ lang = 'de' }) {
                 </li>
                 <li>
                   {isDE ? 'Website von' : 'Website by'}{' '}
-                  <a rel="noopener" target="_blank" href="https://marc.musica.ar">Marc Pozzo</a>
+                  <a rel="noopener" target="_blank" href="https://www.linkedin.com/in/marcospozzo/">Marcos Pozzo</a>
                   {' '}{isDE ? 'mit' : 'using'}{' '}
                   <a href="https://html5up.net">HTML5 UP</a>
                 </li>
