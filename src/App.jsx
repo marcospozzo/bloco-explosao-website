@@ -1,4 +1,5 @@
 import { Routes, Route, Navigate } from 'react-router-dom'
+import ScrollToTop from './components/ScrollToTop.jsx'
 
 import Home from './pages/de/Home.jsx'
 import News from './pages/de/News.jsx'
@@ -29,7 +30,9 @@ import EnTripToBrazil from './pages/en/bands/TripToBrazil.jsx'
 
 export default function App() {
   return (
-    <Routes>
+    <>
+      <ScrollToTop />
+      <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/nachrichten" element={<News />} />
       <Route path="/medien" element={<Media />} />
@@ -59,5 +62,6 @@ export default function App() {
 
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
+    </>
   )
 }
