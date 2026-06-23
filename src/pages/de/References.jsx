@@ -1,0 +1,477 @@
+import { useState, useEffect } from 'react'
+import Layout from '../../components/Layout.jsx'
+
+export default function References() {
+  const [upcoming, setUpcoming] = useState([])
+
+  useEffect(() => {
+    fetch('https://opensheet.elk.sh/1dGxKu34AyicDELP3l9y60eZRdHEkhauAIAiDJTEsgi0/performances-de')
+      .then(r => r.json())
+      .then(data => setUpcoming(data))
+      .catch(() => {})
+  }, [])
+
+  return (
+    <Layout lang="de">
+      <section id="main" className="first-main">
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <section>
+                <header className="major">
+                  <h2>Kommende Auftritte</h2>
+                </header>
+                <div className="row">
+                  <div className="col-12">
+                    <article className="box post">
+                      <section>
+                        <ul id="dates" className="dates">
+                          {upcoming.map((p, i) => (
+                            <li key={i}>
+                              <span className="date">
+                                {p.month} <strong>{p.day}</strong>
+                              </span>
+                              <h3>{p.venue}</h3>
+                              <p>{p.description}</p>
+                            </li>
+                          ))}
+                        </ul>
+                      </section>
+                    </article>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="main">
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <section>
+                <header className="major">
+                  <h2>Referenzen</h2>
+                </header>
+                <div className="row">
+                  <div className="col-12">
+                    <article className="box post">
+                      <section>
+                        <ul className="dates past-performances">
+                          <h3>Festivals</h3>
+                          <ul>
+                            <li>Internationales Sambafestival Göteborg/Schweden</li>
+                            <li>Internationales Sambafestival Coburg</li>
+                            <li>Sambafestival Bremen, regelmäßig seit 2000</li>
+                            <li>1000 Jahre Aschersleben</li>
+                            <li>Straßenmusikfestival Aschersleben regelmäßig seit 2003</li>
+                            <li>Folklorum Zentendorf (Sachsen)</li>
+                            <li>Sambafestival Bad Wildungen</li>
+                            <li>Sambasyndrom Berlin regelmäßig seit 2000</li>
+                            <li>Folk &amp; Roots Festival Rudolstadt, regelmäßig seit 2009</li>
+                            <li>Kulturelle Landpartie im Wendland</li>
+                            <li>Cultura do Brasil, Festival in Rietberg</li>
+                            <li>Brückenfest Ludwigsfelde</li>
+                          </ul>
+                          <h3>Sportveranstaltungen</h3>
+                          <ul>
+                            <li>ISTAF im Olympiastadion</li>
+                            <li>ISTAF im Jahn Sportpark</li>
+                            <li>Berlin Marathon regelmäßig</li>
+                            <li>Laufveranstaltungen in Berlin, Halbmarathon, Staffellauf, Citylauf... regelmäßig</li>
+                            <li>Velothon Berlin regelmäßig</li>
+                            <li>Wasserballspiele von WF Spandau 04</li>
+                            <li>Fußball WM an verschiedenen Orten 2006</li>
+                            <li>Fußballspiele Club Italia</li>
+                            <li>Iron Man in Leipzig</li>
+                            <li>Dresden Marathon regelmäßig</li>
+                          </ul>
+                          <h3>Großveranstaltungen</h3>
+                          <ul>
+                            <li>GASAG-Präsentation im Sony Center</li>
+                            <li>Coral Fashion Show am Brandenburger Tor</li>
+                            <li>Bundesfamilientag vor der alten Nationalgalerie</li>
+                            <li>Wella in Chemnitz</li>
+                            <li>Shopping an der Frauenkirche in Dresden (Eröffnung)</li>
+                            <li>Tempodrom</li>
+                            <li>Arena Berlin</li>
+                            <li>Walpurgisnacht Rüdersdorf</li>
+                            <li>Fest der Kulturen (im Rahmen des Karnevals der Kulturen), regelmäßig</li>
+                            <li>Karneval der Kulturen Berlin regelmäßig (2 x Preisträger)</li>
+                            <li>Fest der Kulturen Hamburg</li>
+                            <li>Altonale Hamburg</li>
+                            <li>Panometer in Leipzig</li>
+                            <li>Fete de la Musique in Berlin regelmäßig</li>
+                          </ul>
+                          <h3>Clubs, Veranstaltungsorte</h3>
+                          <ul>
+                            <li>Adadio Potsdamer Platz (Aids-Gala)</li>
+                            <li>Magnet Club</li>
+                            <li>Muvuca</li>
+                            <li>Mau Club in Rostock</li>
+                            <li>Platenlaase Kulturzentrum (Wendland)</li>
+                            <li>90grad Disco</li>
+                            <li>Pfefferberg Haus 13 und Garten</li>
+                            <li>BKA Spiegelzelt</li>
+                            <li>Ufa Fabrik</li>
+                            <li>Brückenfest Ludwigsfelde</li>
+                            <li>Trommelnacht im Grauen Hof Aschersleben, regelmäßig</li>
+                            <li>Der Blaue Mittwoch in Frankfurt/Oder</li>
+                            <li>Fischerjakobi-Fest in Plaue an der Havel</li>
+                            <li>Wabe in Berlin</li>
+                          </ul>
+                          <h3>Demonstrationen/Kundgebungen</h3>
+                          <ul>
+                            <li>ÖTV/Verdi</li>
+                            <li>Grüne Wahlkampfparty</li>
+                            <li>deine Stimme gegen Armut vor dem Bundeskanzleramt</li>
+                            <li>Amnesty International</li>
+                            <li>Demos gegen rechte Gewalt regelmäßig</li>
+                            <li>Deutscher Tierschutzbund</li>
+                            <li>Anti Atomkraft Demos</li>
+                            <li>gegen Pegida</li>
+                            <li>Großdemo gegen das TTIP Abkommen</li>
+                          </ul>
+                          <h3>Desweiteren auf Hochzeiten, Geburtstagen, Firmenfesten, Stadtteilfesten sowie Brasilshows mit und ohne bras.Tänzerinnen...</h3>
+                        </ul>
+                      </section>
+                    </article>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="main">
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <section>
+                <header className="major">
+                  <h2>Frühere Auftritte</h2>
+                </header>
+                <div className="row">
+                  <div className="col-12">
+                    <article className="box post">
+                      <section>
+                        <ul className="dates past-performances">
+                          <h3>2019</h3>
+                          <ul>
+                            <li>Sun October 27, 2019 Marathon, Dresden, Fetscherplatz 10:30 am-3:00pm</li>
+                            <li>Sun 09/29/2019 Marathon, Berlin, Mehringdamm 9:15-12:30</li>
+                            <li>Sun 29.09.2019 Marathon, Berlin, Kleistpark 9:30-13:00</li>
+                            <li>Sa 28.09.2019 Skatermarathon, Straußberger Platz 15:30-17:30</li>
+                            <li>30.08.-01.09.2019 street music festival, Aschersleben</li>
+                            <li>Sun 25.08.2019 Sport Check, Wilder Eber, 10:00-11:00</li>
+                            <li>Sa 03.08.2019 City Night, Kurfürstendamm, 19:00-21:00</li>
+                            <li>05-07.07.2019 Folk Roots Festival, Rudolstadt</li>
+                            <li>Sa 23.06.2019 Women-Run, Olympic site 3:00-6:00 pm</li>
+                            <li>12.-14.06.2019 3 days relay race, Tiergarten 18:30-21:00</li>
+                            <li>Sa 18.05.2019 Avon Women's Run, Tiergarten 16:30-19:15</li>
+                            <li>Sun 09.06.2019 Carnival of Cultures, parade 13:00-18:00</li>
+                            <li>Sa 08.06.2019 Carnival, Blücherplatzwiese 20:00-22:00</li>
+                            <li>Sun 23.06.2019 Velothon, Ludwigsfelde, 10:00-14:00</li>
+                            <li>Sa 01.06.2019 Drum Night, Ascherleben 8 p.m.-11 p.m.</li>
+                            <li>Sun 12.05.2019 BIG 25, Brandenburger Tor 10:00-12:00</li>
+                            <li>Sun 04/14/2019 Airfield Run, Tempelhofer Feld, 10:00-14:00</li>
+                            <li>Sun 07.04.2019 half marathon, Potsdamer Str., 10:15 a.m. - 1:30 p.m.</li>
+                          </ul>
+                          <h3>2017</h3>
+                          <ul>
+                            <li>Sun 24.09.2017 Marathon, Berlin, Mehringdamm 9 am-12pm</li>
+                            <li>Sun 09/24/2017 Marathon, Berlin, at Kleistpark 9 am-12pm</li>
+                            <li>Sat 23.09.2017 Skatermarathon, Berlin</li>
+                            <li>Sat 16.09.2017 Brunne, city festival</li>
+                            <li>Sun 08/20/2017 Sport Check, Berlin, Wilder Boar 10 a.m.-12 p.m.</li>
+                            <li>Sa 29.07.2017 City Night, Berlin, Kurfürstendamm 19-21h</li>
+                            <li>Sun July 16, 2017 Women Run, Berlin, Olympic site 1 pm-3pm</li>
+                            <li>07-09 July 2017 3 days Folk Roots Festival Rudolstadt</li>
+                            <li>Wed 21.06.2017 Fete de la Musique, Berlin</li>
+                            <li>Sun 18.06.2017 Velothon, Ludwigsfelde, 10-14h</li>
+                            <li>14.-16.06.2017 3rd day relay race in the zoo, 6 pm-9pm</li>
+                            <li>Sun 04.06.2017 Parade Carnival of Cultures, 14-18h</li>
+                            <li>Sa 03.06.2017 Carnival Blücherplatz, lawn program 20-22h</li>
+                            <li>Sat May 20th, 2017 Avon Women's Run, Tiergarten 4-7pm</li>
+                            <li>Sun 14.05.2017 Big 25, Brandenburg Gate 10 am-12pm</li>
+                            <li>Sat May 6th, 2017 Race for Survival, Tempelhof airfield 12-15pm</li>
+                            <li>Sun 04/24/2017 Airfield Run, Tempelhof Airfield 11 am-3pm</li>
+                            <li>Sun April 2nd, 2017 Half Marathon, Neue Nationalgalerie 10 am-1pm</li>
+                          </ul>
+                          <h3>2016</h3>
+                          <ul>
+                            <li>Sun 25.09.2016 marathon, 2 groups, Kleistpark and Mehringdamm</li>
+                            <li>Sa 24.09.2016 Skatermarathon, Berlin Straussberger Platz</li>
+                            <li>Sat. 08/20/2016 Cultura do Brasil, festival in Rietberg / Hessen</li>
+                            <li>Sat. 07/30/2016 City Night Run - Kurfürstendamm / Hectorstr. (7 pm-9pm)</li>
+                            <li>Sat. 07/23/2016 womens run Olympia-Park Berlin</li>
+                            <li>Fri. 08.07.-10.07.2016 Folk Roots Festival Rudolstadt (children's area)</li>
+                            <li>Thursday 07/07/2016 Folk Roots Festival Dance tent opening at 10pm with a band</li>
+                            <li>Tuesday, June 21st, 2016 Fête la Musique 5-8pm Breitscheidplatz</li>
+                            <li>Sun. 19.06.2016 Velothon Ludwigsfelde 10:30 a.m.-2 p.m.</li>
+                            <li>Fri. 03.06.2016 Tiergarten relay race 6:30 p.m.-9 p.m.</li>
+                            <li>Thursday, June 2nd, 2016 Tiergarten relay race 6:30 p.m.-9 p.m.</li>
+                            <li>Wed. 01.06.2016 Tiergarten relay race 6:30 p.m.-9 p.m.</li>
+                            <li>Sat. May 21, 2016 AVON Women's Run Tiergarten - 4:15 p.m.-7:15 p.m.</li>
+                            <li>Sun. May 15th, 2016 BIG 25 Brandenburg Gate - approx. 10:15 a.m.-12:00 p.m.</li>
+                            <li>Sun 05/15/2016 Carnival of Cultures - move (start-No. 22)</li>
+                            <li>Sa. May 14, 2016 Carnival of Cultures - Blücherplatz ("lawn") from 8 p.m.</li>
+                            <li>Fri. May 13th, 2016 Carnival of Cultures - Bazaar stage 7-8pm with a band</li>
+                            <li>Sat. May 7th, 2016 "Grauer Hof" Aschersleben 8-11:30pm</li>
+                            <li>04.05. until May 7th, 2016 Wendland tour ("cultural country party")</li>
+                            <li>Sunday April 3rd, 2016 Half Marathon Potsdamer Str./Nationalgalerie (10 a.m.-1 p.m.)</li>
+                          </ul>
+                          <h3>2015</h3>
+                          <ul>
+                            <li>Sun. 11/22/2015 10 a.m.-1 p.m. Marathon relay race at Tempelhof airfield</li>
+                            <li>Sat. 11/14/2015 approx. 8:30 p.m. Percussion Festival UFA-Fabrik Tempelhof</li>
+                            <li>Sun. October 18, 2015 Marathon Dresden Fetscher Platz 10 a.m.-2 p.m.</li>
+                            <li>Sun. 09/27/2015 Marathon Berlin 9 a.m.-12.30 p.m. Gneisenau / Mehringdamm</li>
+                            <li>Sun. 09/27/2015 Marathon Berlin 9 a.m.-12.30 p.m. Kleistpark</li>
+                            <li>Sat. 09/26/2015 Skater Marathon Berlin 3:30-6 p.m. Strausberger Platz</li>
+                            <li>Sat. 12.09.2015 Ludwigsfelde 8-10 p.m. Bridge Festival</li>
+                            <li>Fri. 04.09.-Sat.05.09.2015 Drum Night Aschersleben</li>
+                            <li>Sun. 23.08.2015 7th city run Berlin (sports check) Dahlem 9-12 a.m.</li>
+                            <li>Saturday, July 25th, 2015 City Night Run - Kurfürstendamm / Hectorstr. (7 pm-9pm)</li>
+                            <li>Fri. July 24th (stage) - Sat. July 25th, 2015 (parade) Schloss Plaue Fischerjakobi</li>
+                            <li>Sat. 07/18/2015 Womens run Olympiapark Berlin</li>
+                            <li>Fri. 03.07.-Sun.05.07.2015 Folk Roots Festival Rudolstadt (children's area)</li>
+                            <li>Fri. 06/26/2015 Tiergarten relay race 6:30 p.m.-9 p.m.</li>
+                            <li>Thursday June 25, 2015 Tiergarten relay race 6:30 p.m.-9 p.m.</li>
+                            <li>Wed. June 24, 2015 Tiergarten relay race 6:30 p.m.-9 p.m.</li>
+                            <li>Sun. 21.06.2015 Fête de la Musique 5 pm-8pm Breitscheidplatz Memorial Church</li>
+                            <li>Sun. 31.05.2015 Velothon Ludwigsfelde 10:30 a.m.-2 p.m.</li>
+                            <li>Sun. May 24th, 2015 Carnival of Cultures - Mehringdamm 12 noon-3pm</li>
+                            <li>Sat. May 23rd, 2015 Carnival of Cultures - Blücherplatz 5 pm-7pm</li>
+                            <li>Saturday, May 16, 2015 "Grauer Hof" Aschersleben 8-11:30pm</li>
+                            <li>Saturday, May 16, 2015 AVON Women's Run, Tiergarten - 4:15 p.m.-7:15 p.m.</li>
+                            <li>Sun. May 10th, 2015 BIG 25 Brandenburg Gate - 10:15 a.m.-1:00 p.m.</li>
+                            <li>Sun. 29.03.2015 Half marathon Potsdamer Str./Nationalgalerie (10 a.m.-1 p.m.)</li>
+                          </ul>
+                          <h3>2014</h3>
+                          <ul>
+                            <li>Sat. 22.11.2014 Winterfeldtplatz 11 a.m.-1 p.m.</li>
+                            <li>Sun. 11/16/2014 Marathon relay race at Tempelhof Airfield 10 a.m.-1 p.m.</li>
+                            <li>Fri. 11/14/2014 Berlin-Paris-Bahia in the UFA factory 8 p.m.</li>
+                            <li>Sat 08/11/2014 PAC-Jahresparty Schwiebusser Str. 16 (23:15 am)</li>
+                            <li>Sun. October 19, 2014 Marathon Dresden - Fetscherplatz 10:20-14:45</li>
+                            <li>Sun. 09/28/2014 Marathon Berlin 9 a.m.-12.30 p.m. Gneisenau / Mehringdamm</li>
+                            <li>Sun. 09/28/2014 41st Marathon Berlin 9 am-12:30pm Kleistpark</li>
+                            <li>Sat. 09/27/2014 Skater Marathon Berlin 3:30-6 p.m. Strausberger Platz</li>
+                            <li>Fri. 09/26/2014 Samba Syndrome 11:30 p.m. FEZ / Wuhlheide</li>
+                            <li>Fri. 05.09.-Sat.06.09.2014 Drum Night Aschersleben</li>
+                            <li>Sun. 08/24/2014 6th city run Berlin (sports check) - Wilder Boar</li>
+                            <li>Saturday, July 26th, 2014 City Night Run Ku'damm / Hectorstr.</li>
+                            <li>Fri. 04.07.-Sun.06.07.2014 Folk-Roots-Festival Rudolstadt</li>
+                            <li>Sat. 21.06.2014 CSD action alliance 3pm-5pm / Fête de la Musique 6pm-8pm</li>
+                            <li>Sun. 08.06.2014 Carnival of Cultures - Parade 12 pm-5pm</li>
+                            <li>Sat. 07.06.2014 Carnival of Cultures - Latinauta stage 1.30 p.m., meadow: 6 p.m.</li>
+                            <li>Fri. 06.06.2014 Tiergarten relay race 6:30 p.m.-9 p.m.</li>
+                            <li>Thursday June 5th, 2014 Tiergarten relay race 6:30 p.m.-9 p.m.</li>
+                            <li>Wed. 04.06.2014 Tiergarten relay race 6:30 p.m.-9 p.m.</li>
+                            <li>Sa. May 31, 2014 "Grauer Hof" Aschersleben</li>
+                            <li>Sun. 25.05.2014 street festival Akazienstr. approx. 5 p.m.</li>
+                            <li>Sun. May 18, 2014 Velothon Ludwigsfelde 10:30 a.m.-2 p.m.</li>
+                            <li>Sat. May 10th, 2014 AVON Women's Run, Tiergarten - 4:15 p.m.-7:15 p.m.</li>
+                            <li>Sun. May 4th, 2014 BIG 25 Brandenburg Gate - 10:15 a.m.-1:00 p.m.</li>
+                            <li>Sun. 30.03.2014 Half marathon Potsdamer Str./Nationalgalerie (10 a.m.-1.30 p.m.)</li>
+                            <li>Wed. 03/26/2014 69th "Blue Wednesday" Kleistforum Frankfurt / Oder (8 pm)</li>
+                            <li>Sat. 22.02.2014 29th Bremen Carnival Schlachthof large stage (8 p.m.)</li>
+                            <li>Sa. 22.02.2014 29th Bremen Carnival Parade (from 12 noon)</li>
+                          </ul>
+                          <h3>2013</h3>
+                          <ul>
+                            <li>Tuesday, December 31st, 2013 New Year's Eve party Winterfeldplatz 11 pm-2am</li>
+                            <li>Sat. 30.11.2013 50th birthday party (at groove)</li>
+                            <li>Sun. 11/17/2013 10 a.m.-1 p.m. Marathon relay race at Tempelhof airfield</li>
+                            <li>Fri. 15.11.2013 CD REALESE concert (2nd CD) + Terra Brasilis (UFA-Fabrik)</li>
+                            <li>Sunday, October 20, 2013 Marathon Dresden Fetscher Platz 10 a.m.-2 p.m.</li>
+                            <li>Sat. October 19, 2013 10 a.m.-11 a.m. Greenpeace vigil at the Russian Embassy</li>
+                            <li>Sat 12.10.2013 11:15 p.m. Annual party 2013 in the PAC</li>
+                            <li>Sun. 29.09.2013 Marathon Berlin 9 a.m.-12.30 p.m. Gneisenau / Mehringdamm</li>
+                            <li>Sun. 29.09.2013 Marathon Berlin 9 a.m.-12.30 p.m. Kleistpark</li>
+                            <li>Sat. 09/28/2013 Skater Marathon Berlin 3:30-6 p.m. Strausberger Platz</li>
+                            <li>Sat 06.09.-Sun 08.09.2013 Drum Night Aschersleben</li>
+                            <li>Sa. 25.08.2013 5th city run Berlin (sports check) Dahlem 9-12 a.m.</li>
+                            <li>Sa. 10.08.2013 garden colony Säntisstr. (Marienfelde) Children's festival and demo</li>
+                            <li>Sat. 07/27/2013 City Night Run - Kurfürstendamm / Hectorstr. (7 pm-9pm)</li>
+                            <li>Fri. 05.07.-Sun.07.07.2013 Folk-Roots-Festival Rudolstadt</li>
+                            <li>Fri. 06/21/2013 Fête de la Musique 7-10 p.m. in front of the Memorial Church</li>
+                            <li>Sun. June 16, 2013 Ironman - Tempelhof Airfield 12 noon-5 p.m.</li>
+                            <li>Sun. 09.06.2013 Velothon Ludwigsfelde 10:30 am-2:00 pm</li>
+                            <li>Sat 01.06.2013 "Primavera 2013" Akazienstr. 7-9pm</li>
+                            <li>Fri. May 31, 2013 Tiergarten relay race 6:30 p.m.-9 p.m.</li>
+                            <li>Thu. May 30, 2013 Tiergarten relay race 6:30 p.m.-9 p.m.</li>
+                            <li>Wed. May 29, 2013 Tiergarten relay race 6:30 p.m.-9 p.m.</li>
+                            <li>Sun. May 19, 2013 Carnival of Cultures - Parade 12 p.m.-5 p.m.</li>
+                            <li>Sat. May 18th, 2013 Carnival of Cultures - Blücherplatz 6 pm-8pm</li>
+                            <li>Sa. 05/11/2013 "Grauer Hof" Aschersleben 8-11:30pm</li>
+                            <li>Sun. 05.05.2013 BIG 25 Brandenburg Gate - 10:15 a.m.-1:00 p.m.</li>
+                            <li>Saturday, May 4th, 2013 AVON Women's Run, Tiergarten - 4:15 p.m.-7:15 p.m.</li>
+                            <li>Sun. 04/07/2013 Half marathon Potsdamer Str./Nationalgalerie (10 a.m.-1.30 p.m.)</li>
+                          </ul>
+                          <h3>2012</h3>
+                          <ul>
+                            <li>Sat. 11/18/2012 Marathon relay race at Tempelhof airfield - 10 a.m.-1 p.m.</li>
+                            <li>Sun. October 21, 2012 Dresden marathon approx. 9 a.m.-1 p.m.</li>
+                            <li>Sun. 30.09.2012 Marathon Berlin Kleistpark approx. 9 a.m. to 1 p.m.</li>
+                            <li>Sun. 30.09.2012 Marathon Berlin Unter den Linden approx. 9 a.m. to 1 p.m.</li>
+                            <li>Sat. 29.09.2012 Skater-Marathon Berlin 3.30pm-6.30pm</li>
+                            <li>Sat 07.09.-Sun.09.09.2012 Drum Night Aschersleben</li>
+                            <li>Sat. 08/26/2012 4th city run Berlin (sports check) Dahlem 9:00-11:30 a.m.</li>
+                            <li>Sa. 04.08.2012 City Night Run - Kurfürstendamm / Hectorstr. - 6 p.m.-9 p.m.</li>
+                            <li>Fri. 06.07.-Sun.08.07.2012 Folk Roots Festival Rudolstadt</li>
+                            <li>Thursday June 15, 2012 Relay race at the Tiergarten, 6:30 p.m.-9 p.m.</li>
+                            <li>Wed. 14.06.2012 Tiergarten relay race 6:30 p.m.-9 p.m.</li>
+                            <li>Tue. 06/13/2012 Tiergarten relay race 6:30 p.m.-9 p.m.</li>
+                            <li>Sun. 10.06.2012 Velothon Ludwigsfelde 10:30 a.m.-2 p.m.</li>
+                            <li>Sun. May 27th, 2012 Carnival of Cultures - Parade 12 pm-5pm</li>
+                            <li>Sat. May 26th, 2012 Carnival of Cultures - Blücherplatz 4 p.m.</li>
+                            <li>Sat. May 26th, 2012 Carnival of Cultures - Latinauta stage 2:15 p.m.</li>
+                            <li>Sat. May 19th, 2012 "Grauer Hof" Aschersleben 8-11:30pm</li>
+                            <li>Sun. 12.05.2012 AVON Women's Run (Tiergarten)</li>
+                            <li>Sun. May 6th, 2012 BIG 25 Brandenburg Gate - 10:15 a.m.-1:00 p.m.</li>
+                            <li>Sat. 05.05.2012 UFA-Fabrik (with band) 8 p.m.</li>
+                            <li>Sun. 04/01/2012 Half marathon Potsdamer Str./Neue Nationalgalerie - 10:15 a.m.-1:30 p.m.</li>
+                          </ul>
+                          <h3>2011</h3>
+                          <ul>
+                            <li>Dresden marathon</li>
+                            <li>Aschersleben street music festival</li>
+                            <li>Folk Festival Rudolstadt</li>
+                            <li>ISTAF (Olympic Stadium)</li>
+                            <li>Carnival of Cultures (parade)</li>
+                          </ul>
+                          <h3>2010</h3>
+                          <ul>
+                            <li>Dresden marathon</li>
+                            <li>Aschersleben street music festival</li>
+                            <li>Folk Festival Rudolstadt</li>
+                            <li>Stage performance KdK (Berlin)</li>
+                            <li>Carnival of Cultures (parade)</li>
+                          </ul>
+                          <h3>2009</h3>
+                          <ul>
+                            <li>Dresden marathon</li>
+                            <li>Aschersleben street music festival</li>
+                            <li>Folk Festival Rudolstadt</li>
+                            <li>"Club Italia" (soccer)</li>
+                            <li>Carnival of Cultures (parade)</li>
+                            <li>Bremen Carnival</li>
+                          </ul>
+                          <h3>2008</h3>
+                          <ul>
+                            <li>Dresden marathon</li>
+                            <li>Aschersleben street music festival</li>
+                            <li>Stage performance KdK (Berlin)</li>
+                            <li>Carnival of Cultures (parade)</li>
+                            <li>Bremen Carnival</li>
+                          </ul>
+                          <h3>2007</h3>
+                          <ul>
+                            <li>Dresden marathon</li>
+                            <li>Aschersleben street music festival</li>
+                            <li>Samba Festival Bad Wildungen</li>
+                            <li>SambaSyndrom Berlin</li>
+                            <li>"Club Italia" (soccer)</li>
+                            <li>Frauenkirche (Dresden)</li>
+                            <li>Carnival of Cultures (parade)</li>
+                          </ul>
+                          <h3>2006</h3>
+                          <ul>
+                            <li>Dresden marathon</li>
+                            <li>Aschersleben street music festival</li>
+                            <li>to the soccer world cup</li>
+                            <li>Federal Family Day (old National Gallery)</li>
+                            <li>Carnival of Cultures (parade)</li>
+                            <li>Festival of Cultures (Hamburg)</li>
+                          </ul>
+                          <h3>2005</h3>
+                          <ul>
+                            <li>Dresden marathon</li>
+                            <li>Aschersleben street music festival</li>
+                            <li>Samba Festival Bad Wildungen</li>
+                            <li>Ironman Leipzig</li>
+                            <li>Wella (Chemnitz)</li>
+                            <li>Stage performance KdK (Berlin)</li>
+                            <li>Carnival of Cultures (parade)</li>
+                          </ul>
+                          <h3>2004</h3>
+                          <ul>
+                            <li>Aschersleben street music festival</li>
+                            <li>Water polo WF Spandau</li>
+                            <li>Carnival of Cultures (parade)</li>
+                          </ul>
+                          <h3>2003</h3>
+                          <ul>
+                            <li>1000 years of Aschersleben</li>
+                            <li>international folk festival Zentendorf (Saxony)</li>
+                            <li>Samba Festival Bad Wildungen</li>
+                            <li>ISTAF (Jahnpark Berlin)</li>
+                            <li>Water polo WF Spandau</li>
+                            <li>Coral Fashion Show (Brandenburg Gate)</li>
+                            <li>Carnival of Cultures (parade)</li>
+                            <li>Bremen Carnival</li>
+                          </ul>
+                          <h3>2002</h3>
+                          <ul>
+                            <li>SambaSyndrom Berlin</li>
+                            <li>ISTAF (Olympic Stadium)</li>
+                            <li>GASAG company party in the Sony Center</li>
+                            <li>Arena (Berlin)</li>
+                            <li>Stage performance KdK (Berlin)</li>
+                            <li>Carnival of Cultures (parade)</li>
+                            <li>Walpurgis Night Rüdersdorf</li>
+                          </ul>
+                          <h3>2001</h3>
+                          <ul>
+                            <li>Carnival of Cultures (parade)</li>
+                            <li>Walpurgis Night Rüdersdorf</li>
+                          </ul>
+                          <h3>2000</h3>
+                          <ul>
+                            <li>Bremen Carnival</li>
+                            <li>Coburg Samba Festival</li>
+                            <li>SambaSyndrom Berlin</li>
+                            <li>Tempodrom</li>
+                            <li>Carnival of Cultures (parade)</li>
+                            <li>Walpurgis Night Rüdersdorf</li>
+                          </ul>
+                          <h3>1999</h3>
+                          <ul>
+                            <li>Carnival of Cultures (parade)</li>
+                            <li>Walpurgis Night Rüdersdorf</li>
+                          </ul>
+                          <h3>1998</h3>
+                          <ul>
+                            <li>Samba Festival Gothenburg (Sweden)</li>
+                            <li>Carnival of Cultures (parade)</li>
+                            <li>Stage performance KdK (Berlin)</li>
+                          </ul>
+                          <h3>1997</h3>
+                          <ul>
+                            <li>(still as "Villa Cruz" or "Tamporada")</li>
+                            <li>Carnival of Cultures (parade)</li>
+                            <li>Walpurgis Night Rüdersdorf</li>
+                          </ul>
+                          <h3>1996</h3>
+                          <ul>
+                            <li>(still as "Villa Cruz" or "Tamporada")</li>
+                            <li>Carnival of Cultures (parade)</li>
+                            <li>Walpurgis Night Rüdersdorf</li>
+                          </ul>
+                        </ul>
+                      </section>
+                    </article>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </Layout>
+  )
+}
