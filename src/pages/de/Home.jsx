@@ -6,7 +6,7 @@ import BandsPortfolio from '../../components/BandsPortfolio.jsx'
 const BANDS = [
   {
     to: '/bands-projekte/grosse-formation',
-    img: '/images/bands/big-formation.jpg',
+    img: '/images/big-percussion.jpg',
     alt: 'Große Formation',
     title: 'Große Formation',
     description: 'Unsere große Samba-Percussion-Formation mit bis zu 70 Trommlern für Karneval und Großveranstaltungen.',
@@ -14,7 +14,7 @@ const BANDS = [
   },
   {
     to: '/bands-projekte/kleine-formationen',
-    img: '/images/bands/small-formation.jpg',
+    img: '/images/small-percussion.jpg',
     alt: 'Kleine Formationen',
     title: 'Kleine Formationen',
     description: 'Flexible kleinere Gruppen für Firmenevents, Hochzeiten und andere Veranstaltungen.',
@@ -22,7 +22,7 @@ const BANDS = [
   },
   {
     to: '/bands-projekte/formation-mit-band-und-saenger',
-    img: '/images/bands/formation-with-band.jpg',
+    img: '/images/percussion-with-bands.JPG',
     alt: 'Formation mit Band & Sänger',
     title: 'Formation mit Band & Sänger',
     description: 'Percussion-Formation kombiniert mit Live-Band und Sängern für eine vollständige Show.',
@@ -30,7 +30,7 @@ const BANDS = [
   },
   {
     to: '/bands-projekte/spezielle-arrangements',
-    img: '/images/bands/special-arrangements.jpg',
+    img: '/images/special-performances.jpg',
     alt: 'Spezielle Arrangements',
     title: 'Spezielle Arrangements',
     description: 'Maßgeschneiderte Arrangements für besondere Anlässe und spezielle Anforderungen.',
@@ -38,7 +38,7 @@ const BANDS = [
   },
   {
     to: '/bands-projekte/duo-trio',
-    img: '/images/bands/duo-trio.jpg',
+    img: '/images/duo-trio.jpg',
     alt: 'Duo / Trio für Shows',
     title: 'Duo / Trio für Shows',
     description: 'Kompakte Besetzung für kleinere Events, perfekt für Straßenperformances und private Feiern.',
@@ -46,7 +46,7 @@ const BANDS = [
   },
   {
     to: '/bands-projekte/gruppenleiter',
-    img: '/images/bands/group-leaders.jpg',
+    img: '/images/thumbnails/group-leaders-thumb.jpg',
     alt: 'Gruppenleiter',
     title: 'Gruppenleiter',
     description: 'Professionelle Gruppenleiter für Workshops, Teambuilding und Unterricht.',
