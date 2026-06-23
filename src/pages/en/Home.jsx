@@ -60,18 +60,21 @@ export default function Home() {
   useEffect(() => {
     fetch('https://opensheet.elk.sh/1dGxKu34AyicDELP3l9y60eZRdHEkhauAIAiDJTEsgi0/news')
       .then(r => r.json())
-      .then(data => setNews(data.slice(0, 3)))
+      .then(data => setNews(data))
       .catch(() => {})
   }, [])
 
   return (
     <Layout lang="en">
-      <section id="main">
+      <section id="main" className="first-main">
         <div className="container">
           <div className="row">
             <div className="col-8 col-12-medium">
-              <section>
-                <header className="major">
+              <article className="box post">
+                <a href="#1" className="image featured">
+                  <img src="/images/home.jpg" alt="Rehearsal at Tempelhofer Feld, Berlin" />
+                </a>
+                <header id="1">
                   <h2>Welcome!</h2>
                 </header>
                 <p>
@@ -102,28 +105,26 @@ export default function Home() {
                   At the Karneval der Kulturen we play with up to 70 drummers, our own large dance formations and
                   many other guests, making us one of the largest formations.
                 </p>
-              </section>
+              </article>
             </div>
 
             <div className="col-4 col-12-medium">
-              <section>
-                <header className="major">
-                  <h2>News</h2>
+              <section className="box portfolio">
+                <Link to="/en/news" className="image featured">
+                  <img src="/images/rehearsal-tempelhofer-feld.jpg" alt="Group of six percussionists with instruments in the grass" />
+                </Link>
+                <header>
+                  {news[0] && <h3>{news[0].title}</h3>}
                 </header>
-                {news.map((item, i) => (
-                  <div key={i} className="box">
-                    <h3>{item.title}</h3>
-                    <p>{item.description}</p>
-                  </div>
-                ))}
-                <ul className="actions">
-                  <li><Link to="/en/news" className="button">Learn more</Link></li>
-                </ul>
+                {news[0] && <p>{news[0].description}</p>}
+                <footer>
+                  <Link to="/en/news" className="button alt">Learn more</Link>
+                </footer>
               </section>
 
-              <section>
+              <section className="box facebook-iframe">
                 <iframe
-                  src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FBlocoExplosaoPerc&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                  src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FBlocoExplosaoPerc&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
                   width="100%"
                   height="500"
                   style={{ border: 'none', overflow: 'hidden' }}
@@ -134,10 +135,14 @@ export default function Home() {
                 ></iframe>
               </section>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div id="bands-projects" className="col-12">
-              <BandsPortfolio title="Bands &amp; Projects" bands={BANDS} />
-            </div>
+      <section id="main">
+        <div id="bands-projects" className="container">
+          <div className="row">
+            <BandsPortfolio title="Bands &amp; Projects" bands={BANDS} />
           </div>
         </div>
       </section>

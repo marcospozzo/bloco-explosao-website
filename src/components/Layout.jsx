@@ -1,11 +1,14 @@
-import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { useState, useEffect, useRef } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import Footer from './Footer.jsx'
 import BackToTop from './BackToTop.jsx'
 
 export default function Layout({ children, lang = 'de' }) {
   const [navOpen, setNavOpen] = useState(false)
+  const [openDropdown, setOpenDropdown] = useState(null)
+  const navRef = useRef(null)
   const isDE = lang === 'de'
+  const location = useLocation()
 
   useEffect(() => {
     document.body.classList.remove('is-preload')
@@ -18,6 +21,19 @@ export default function Layout({ children, lang = 'de' }) {
     document.body.classList.toggle('navPanel-visible', navOpen)
   }, [navOpen])
 
+  useEffect(() => {
+    setOpenDropdown(null)
+  }, [location.pathname])
+
+  useEffect(() => {
+    if (!openDropdown) return
+    function handler(e) {
+      if (!navRef.current?.contains(e.target)) setOpenDropdown(null)
+    }
+    document.addEventListener('click', handler)
+    return () => document.removeEventListener('click', handler)
+  }, [openDropdown])
+
   function toggleNav(e) {
     e.preventDefault()
     setNavOpen(o => !o)
@@ -25,6 +41,18 @@ export default function Layout({ children, lang = 'de' }) {
 
   function closeNav() {
     setNavOpen(false)
+  }
+
+  function toggleDropdown(e, key) {
+    e.preventDefault()
+    e.stopPropagation()
+    setOpenDropdown(d => d === key ? null : key)
+  }
+
+  function cls(path) {
+    const p = location.pathname
+    if (path === '/' || path === '/en') return p === path ? 'current' : ''
+    return p.startsWith(path) ? 'current' : ''
   }
 
   return (
@@ -98,13 +126,13 @@ export default function Layout({ children, lang = 'de' }) {
             <img src="/images/logo.png" alt="Bloco Explosao logo" />
           </Link>
           <h5>Afro-Brasil percussion from Berlin</h5>
-          <nav id="nav">
+          <nav id="nav" ref={navRef}>
             <ul>
               {isDE ? (
                 <>
-                  <li><Link to="/">Home</Link></li>
-                  <li>
-                    <a href="/#bands-projects">Bands / Projekte</a>
+                  <li className={cls('/')}><Link to="/">Home</Link></li>
+                  <li className={`${cls('/bands-projekte')} ${openDropdown === 'bands' ? 'open' : ''}`.trim()}>
+                    <a href="/#bands-projects" onClick={e => toggleDropdown(e, 'bands')}>Bands / Projekte</a>
                     <ul>
                       <li><Link to="/bands-projekte/grosse-formation">Große Formation</Link></li>
                       <li><Link to="/bands-projekte/kleine-formationen">Kleine Formationen</Link></li>
@@ -115,18 +143,18 @@ export default function Layout({ children, lang = 'de' }) {
                       <li><Link to="/bands-projekte/brasilien">Reise nach Brasilien</Link></li>
                     </ul>
                   </li>
-                  <li><Link to="/unterricht-workshops">Unterricht / Workshops</Link></li>
-                  <li>
-                    <Link to="/medien">Medien</Link>
+                  <li className={cls('/unterricht-workshops')}><Link to="/unterricht-workshops">Unterricht / Workshops</Link></li>
+                  <li className={`${cls('/medien')} ${openDropdown === 'medien' ? 'open' : ''}`.trim()}>
+                    <Link to="/medien" onClick={e => toggleDropdown(e, 'medien')}>Medien</Link>
                     <ul>
                       <li><Link to="/medien#photos">Photos</Link></li>
                       <li><Link to="/medien#videos">Videos</Link></li>
                       <li><Link to="/medien#cds">CDs</Link></li>
                     </ul>
                   </li>
-                  <li><Link to="/referenzen">Referenzen</Link></li>
-                  <li>
-                    <a href="#">Links</a>
+                  <li className={cls('/referenzen')}><Link to="/referenzen">Referenzen</Link></li>
+                  <li className={openDropdown === 'links-de' ? 'open' : ''}>
+                    <a href="#" onClick={e => toggleDropdown(e, 'links-de')}>Links</a>
                     <ul>
                       <li><a href="https://sites.google.com/view/wwwbahiaconnectionde" rel="noopener" target="_blank">Bahia Connection</a></li>
                       <li><a href="https://fogodosamba.de" rel="noopener" target="_blank">Fogo Do Samba</a></li>
@@ -137,8 +165,8 @@ export default function Layout({ children, lang = 'de' }) {
                     </ul>
                   </li>
                   <li><a href="#footer">Kontakt / Buchung</a></li>
-                  <li className="important">
-                    <a href="#">DE</a>
+                  <li className={`important ${openDropdown === 'lang-de' ? 'open' : ''}`}>
+                    <a href="#" onClick={e => toggleDropdown(e, 'lang-de')}>DE</a>
                     <ul>
                       <li><Link to="/en">EN</Link></li>
                     </ul>
@@ -146,9 +174,9 @@ export default function Layout({ children, lang = 'de' }) {
                 </>
               ) : (
                 <>
-                  <li><Link to="/en">Home</Link></li>
-                  <li>
-                    <a href="/en#bands-projects">Bands / Projects</a>
+                  <li className={cls('/en')}><Link to="/en">Home</Link></li>
+                  <li className={`${cls('/en/bands')} ${openDropdown === 'bands' ? 'open' : ''}`.trim()}>
+                    <a href="/en#bands-projects" onClick={e => toggleDropdown(e, 'bands')}>Bands / Projects</a>
                     <ul>
                       <li><Link to="/en/bands/big-percussion">Big percussion</Link></li>
                       <li><Link to="/en/bands/small-percussion">Small percussion</Link></li>
@@ -159,18 +187,18 @@ export default function Layout({ children, lang = 'de' }) {
                       <li><Link to="/en/bands/trip-to-brazil">Trip to Brazil</Link></li>
                     </ul>
                   </li>
-                  <li><Link to="/en/lessons-workshops">Lessons / Workshops</Link></li>
-                  <li>
-                    <Link to="/en/media">Media</Link>
+                  <li className={cls('/en/lessons-workshops')}><Link to="/en/lessons-workshops">Lessons / Workshops</Link></li>
+                  <li className={`${cls('/en/media')} ${openDropdown === 'media' ? 'open' : ''}`.trim()}>
+                    <Link to="/en/media" onClick={e => toggleDropdown(e, 'media')}>Media</Link>
                     <ul>
                       <li><Link to="/en/media#photos">Photos</Link></li>
                       <li><Link to="/en/media#videos">Videos</Link></li>
                       <li><Link to="/en/media#cds">CDs</Link></li>
                     </ul>
                   </li>
-                  <li><Link to="/en/appearances">Appearances</Link></li>
-                  <li>
-                    <a href="#">Links</a>
+                  <li className={cls('/en/appearances')}><Link to="/en/appearances">Appearances</Link></li>
+                  <li className={openDropdown === 'links-en' ? 'open' : ''}>
+                    <a href="#" onClick={e => toggleDropdown(e, 'links-en')}>Links</a>
                     <ul>
                       <li><a href="https://sites.google.com/view/wwwbahiaconnectionde" rel="noopener" target="_blank">Bahia Connection</a></li>
                       <li><a href="https://fogodosamba.de" rel="noopener" target="_blank">Fogo Do Samba</a></li>
@@ -181,8 +209,8 @@ export default function Layout({ children, lang = 'de' }) {
                     </ul>
                   </li>
                   <li><a href="#footer">Contact / Booking</a></li>
-                  <li className="important">
-                    <a href="#">EN</a>
+                  <li className={`important ${openDropdown === 'lang-en' ? 'open' : ''}`}>
+                    <a href="#" onClick={e => toggleDropdown(e, 'lang-en')}>EN</a>
                     <ul>
                       <li><Link to="/">DE</Link></li>
                     </ul>
