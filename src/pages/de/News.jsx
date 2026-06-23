@@ -8,7 +8,7 @@ export default function News() {
   useEffect(() => {
     fetch('https://opensheet.elk.sh/1dGxKu34AyicDELP3l9y60eZRdHEkhauAIAiDJTEsgi0/news-de')
       .then(r => r.json())
-      .then(data => { setItems(data); setLoading(false) })
+      .then(data => { setItems(data.filter(d => d.title || d.description)); setLoading(false) })
       .catch(() => setLoading(false))
   }, [])
 
