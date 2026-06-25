@@ -38,9 +38,9 @@ export default function PercussionWithBands() {
                         <li>Additional musicians on solo guitar, saxophone + XX.</li>
                       </ul>
                       <div className="video-iframe">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/qlGns1dAs3c" title="YouTube video player" frameBorder="0" allow={ALLOW} allowFullScreen></iframe>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/nud5G0fNq_w" title="YouTube video player" frameBorder="0" allow={ALLOW} allowFullScreen></iframe>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/HFpu3PJUBRw" title="YouTube video player" frameBorder="0" allow={ALLOW} allowFullScreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/qlGns1dAs3c" title="YouTube video player" frameBorder="0" allow={ALLOW} allowFullScreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nud5G0fNq_w" title="YouTube video player" frameBorder="0" allow={ALLOW} allowFullScreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/HFpu3PJUBRw" title="YouTube video player" frameBorder="0" allow={ALLOW} allowFullScreen></iframe>
                       </div>
                     </section>
                   </div>

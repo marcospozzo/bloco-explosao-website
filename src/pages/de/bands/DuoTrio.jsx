@@ -45,7 +45,7 @@ export default function DuoTrio() {
                         <li>NN: Bass, Saxofon, Gitarre</li>
                       </ul>
                       <div className="video-iframe">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/6T03Ul-umlA" title="YouTube video player" frameBorder="0" allow={ALLOW} allowFullScreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/6T03Ul-umlA" title="YouTube video player" frameBorder="0" allow={ALLOW} allowFullScreen></iframe>
                       </div>
                     </section>
                   </div>

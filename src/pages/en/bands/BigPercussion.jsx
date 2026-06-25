@@ -39,10 +39,10 @@ export default function BigPercussion() {
                         <li>At sporting events <a href="#video2">(see video below)</a>.</li>
                       </ul>
                       <div id="video" className="video-iframe">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/jE94Z59r5UA" title="YouTube video player" frameBorder="0" allow={ALLOW} allowFullScreen></iframe>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/nvVPU6ijSc4" title="YouTube video player" frameBorder="0" allow={ALLOW} allowFullScreen></iframe>
-                        <iframe id="video2" width="560" height="315" src="https://www.youtube.com/embed/gmbNGX860_c" title="YouTube video player" frameBorder="0" allow={ALLOW} allowFullScreen></iframe>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/bc709rGWwJ0" title="YouTube video player" frameBorder="0" allow={ALLOW} allowFullScreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/jE94Z59r5UA" title="YouTube video player" frameBorder="0" allow={ALLOW} allowFullScreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nvVPU6ijSc4" title="YouTube video player" frameBorder="0" allow={ALLOW} allowFullScreen></iframe>
+                        <iframe id="video2" width="560" height="315" src="https://www.youtube-nocookie.com/embed/gmbNGX860_c" title="YouTube video player" frameBorder="0" allow={ALLOW} allowFullScreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/bc709rGWwJ0" title="YouTube video player" frameBorder="0" allow={ALLOW} allowFullScreen></iframe>
                       </div>
                     </section>
                   </div>

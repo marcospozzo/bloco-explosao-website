@@ -33,7 +33,7 @@ export default function SmallPercussion() {
                       </header>
                       <p>Between 4 and 8 players.</p>
                       <div className="video-iframe">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/gRxg2Xea3Tk" title="YouTube video player" frameBorder="0" allow={ALLOW} allowFullScreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/gRxg2Xea3Tk" title="YouTube video player" frameBorder="0" allow={ALLOW} allowFullScreen></iframe>
                       </div>
                     </section>
                   </div>

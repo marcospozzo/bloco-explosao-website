@@ -33,7 +33,7 @@ export default function SmallFormations() {
                       </header>
                       <p>Zwischen 4 und 8 Musikern.</p>
                       <div className="video-iframe">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/gRxg2Xea3Tk" title="YouTube video player" frameBorder="0" allow={ALLOW} allowFullScreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/gRxg2Xea3Tk" title="YouTube video player" frameBorder="0" allow={ALLOW} allowFullScreen></iframe>
                       </div>
                     </section>
                   </div>
