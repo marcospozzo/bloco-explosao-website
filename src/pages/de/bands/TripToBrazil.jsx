@@ -22,7 +22,7 @@ export default function TripToBrazil() {
                         <p>
                           Die Brasilienreise der Bahia Connection findet wie geplant statt. Termine und Programm
                           finden sie auf dem PDF{' '}
-                          <a href="/bands-projekte/PDF-Deutsch-für-HP-Reise2027.odt" download>Detaillierte Infos</a>.
+                          <a href="/bands-projekte/PDF-Deutsch-für-HP-Reise2027.pdf" download>Detaillierte Infos</a>.
                           Bei Interesse bitte sofort bei mir melden (begrenzte Teilnehmerzahl).
                         </p>
                       </header>
