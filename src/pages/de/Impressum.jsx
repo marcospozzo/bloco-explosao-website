@@ -35,7 +35,7 @@ export default function Impressum() {
 
                       <p>
                         1. Geltungsbereich <br />
-                        Für alle Lieferungen von Casa Veranstaltungen (§ 13 BGB) gelten diese Allgemeinen
+                        Für alle Lieferungen von Bloco Explosão e.V. (§ 13 BGB) gelten diese Allgemeinen
                         Geschäftsbedingungen (AGB).
                       </p>
                       <p>
@@ -190,8 +190,8 @@ export default function Impressum() {
                       </p>
                       <p>Wofür nutzen wir Ihre Daten?</p>
                       <p>
-                        Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu
-                        gewährleisten. Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden.
+                        Die Daten werden erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten
+                        und um Anfragen über das Kontaktformular zu bearbeiten.
                       </p>
                       <p>Welche Rechte haben Sie bezüglich Ihrer Daten?</p>
                       <p>
@@ -202,19 +202,6 @@ export default function Impressum() {
                         Adresse an uns wenden. Des Weiteren steht Ihnen ein Beschwerderecht bei der zuständigen
                         Aufsichtsbehörde zu.
                       </p>
-                      <p>
-                        ANALYSE-TOOLS UND TOOLS VON DRITTANBIETERN Beim Besuch unserer Website kann Ihr
-                        Surf-Verhalten statistisch ausgewertet werden. Das geschieht vor allem mit Cookies und mit
-                        sogenannten Analyseprogrammen. Die Analyse Ihres Surf-Verhaltens erfolgt in der Regel
-                        anonym; das Surf-Verhalten kann nicht zu Ihnen zurückverfolgt werden. Sie können dieser
-                        Analyse widersprechen oder sie durch die Nichtbenutzung bestimmter Tools verhindern.
-                        Detaillierte Informationen dazu finden Sie in der folgenden Datenschutzerklärung.
-                      </p>
-                      <p>
-                        Sie können dieser Analyse widersprechen. Über die Widerspruchsmöglichkeiten werden wir Sie
-                        in dieser Datenschutzerklärung informieren.
-                      </p>
-
                       <p>
                         Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf
                         unberührt.
@@ -247,23 +234,6 @@ export default function Impressum() {
                       <p>
                         Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können die Daten, die Sie an uns
                         übermitteln, nicht von Dritten mitgelesen werden.
-                      </p>
-                      <p>
-                        VERSCHLÜSSELTER ZAHLUNGSVERKEHR AUF DIESER WEBSITE<br />
-                        Besteht nach dem Abschluss eines kostenpflichtigen Vertrags eine Verpflichtung, uns Ihre
-                        Zahlungsdaten (z.B. Kontonummer bei Einzugsermächtigung) zu übermitteln, werden diese
-                        Daten zur Zahlungsabwicklung benötigt.
-                      </p>
-                      <p>
-                        Der Zahlungsverkehr über die gängigen Zahlungsmittel (Visa/MasterCard,
-                        Lastschriftverfahren) erfolgt ausschließlich über eine verschlüsselte SSL- bzw.
-                        TLS-Verbindung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile
-                        des Browsers von &quot;http://&quot; auf &quot;https://&quot; wechselt und an dem
-                        Schloss-Symbol in Ihrer Browserzeile.
-                      </p>
-                      <p>
-                        Bei verschlüsselter Kommunikation können Ihre Zahlungsdaten, die Sie an uns übermitteln,
-                        nicht von Dritten mitgelesen werden.
                       </p>
                       <p>
                         AUSKUNFT, SPERRUNG, LÖSCHUNG<br />
@@ -306,12 +276,10 @@ export default function Impressum() {
                       </p>
                       <p>
                         Cookies, die zur Durchführung des elektronischen Kommunikationsvorgangs oder zur
-                        Bereitstellung bestimmter, von Ihnen erwünschter Funktionen (z.B. Warenkorbfunktion)
-                        erforderlich sind, werden auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO gespeichert. Der
-                        Websitebetreiber hat ein berechtigtes Interesse an der Speicherung von Cookies zur
-                        technisch fehlerfreien und optimierten Bereitstellung seiner Dienste. Soweit andere
-                        Cookies (z.B. Cookies zur Analyse Ihres Surfverhaltens) gespeichert werden, werden diese
-                        in dieser Datenschutzerklärung gesondert behandelt.
+                        Bereitstellung bestimmter, von Ihnen erwünschter Funktionen erforderlich sind, werden auf
+                        Grundlage von Art. 6 Abs. 1 lit. f DSGVO gespeichert. Der Websitebetreiber hat ein
+                        berechtigtes Interesse an der Speicherung von Cookies zur technisch fehlerfreien und
+                        optimierten Bereitstellung seiner Dienste.
                       </p>
                       <p>
                         KONTAKTFORMULAR<br />
@@ -356,15 +324,6 @@ export default function Impressum() {
                         abspielen. Wenn Sie ein Video abspielen, kann YouTube Daten über Ihre Nutzung speichern.
                         Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. Weitere Informationen zum Datenschutz bei
                         YouTube finden Sie unter https://www.google.de/intl/de/policies/privacy/.
-                      </p>
-                      <p>
-                        FACEBOOK-SEITENEINBINDUNG<br />
-                        Auf unserer Startseite ist eine Vorschau unserer Facebook-Seite eingebunden (Facebook Page
-                        Plugin), angeboten durch Facebook Ireland Ltd., 4 Grand Canal Square, Dublin 2, Irland.
-                        Durch das Einbinden kann Facebook Informationen über Ihren Besuch auf unserer Website
-                        erhalten, auch wenn Sie kein Facebook-Konto haben. Rechtsgrundlage ist Art. 6 Abs. 1
-                        lit. f DSGVO. Weitere Informationen finden Sie in der Datenschutzerklärung von Facebook:
-                        https://www.facebook.com/about/privacy/.
                       </p>
 
                     </section>
