@@ -40,7 +40,7 @@ function Lightbox({ images, index, onClose, onPrev, onNext }) {
     <div id="myModal" className="modal" style={{ display: 'block' }}>
       <span className="close cursor" onClick={onClose}>&times;</span>
       <div className="modal-content">
-        <div className="mySlides">
+        <div className="mySlides" style={{ display: 'block' }}>
           <div className="numbertext">{index + 1} / {images.length}</div>
           <img src={images[index].src} style={{ width: '100%' }} alt={images[index].alt} />
         </div>
