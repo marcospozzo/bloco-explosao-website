@@ -29,7 +29,7 @@ export default function LessonsWorkshops() {
                         <br />
                         Wir bieten regelmäßig Einführungsworkshop an.
                       </p>
-                      <p>Einsteiger-Kurs: jeden Donnerstag von 20-22h. Bei Interesse bitte melden.</p>
+                      <p>Einsteiger-Kurs: jeden Dienstag von 20 - 22h. Bei Interesse bitte melden.</p>
                       <p>
                         Vom rhythmisch begabten Anfänger bis hin zum erfahrenen Trommel-begeisterten sind alle
                         willkommen. Spaß und Auftritte sind garantiert. Kommt vorbei!
@@ -38,10 +38,15 @@ export default function LessonsWorkshops() {
                         aus Salvador da Bahia einsteigen.
                       </p>
                       <p>
-                        Dienstag von 19 - 22 Uhr proben die Fortgeschrittenen. Dort ist es für erfahrene Spieler
-                        durchaus möglich einzusteigen.
+                        Dienstag von 19 - 22h Uhr proben die Fortgeschrittenen. Dort ist es für erfahrene Spieler durchaus möglich einzusteigen.
                       </p>
-                      <p>Leiter der Gruppen und Workshops sind die Musiker Volker Conrath und VVolf Oliveira</p>
+                      <p>
+                        Probenort: SambaEtage, 1. Stock der Musikfabrik, Raum A<br />
+                        <a href="https://maps.app.goo.gl/x6aFWGhk8KfwvEwN8" target="_blank" rel="noopener">
+                          Neuköllnische Allee 6-8, 12057 Berlin-Neukölln
+                        </a>
+                      </p>
+                      <p>Leiter der Gruppen und Workshops sind die Musiker Volker Conrath und VVolf Oliveira.</p>
                     </section>
                   </div>
                 </div>

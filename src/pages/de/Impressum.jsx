@@ -15,6 +15,7 @@ export default function Impressum() {
                   <div className="col-12">
                     <section className="box">
                       <p>
+                        <strong>Eingetragene Adresse (kein Probenort):</strong><br />
                         Bloco Explosão e.V. <br />
                         Volker Conrath <br />
                         Mehringdamm 109 <br />

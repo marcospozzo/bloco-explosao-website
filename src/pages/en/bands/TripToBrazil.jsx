@@ -22,7 +22,7 @@ export default function TripToBrazil() {
                         <p>
                           Join the Bahia Connection in Brazil – Pre-Carnival Trip. Dates and program details are
                           available in the PDF here{' '}
-                          <a href="/bands-projekte/PDF-English-HP-2026.pdf" download>(LINK)</a>.
+                          <a href="/bands-projekte/PDF-English-HP-2027.odt" download>(LINK)</a>.
                           If you're interested, please get in touch soon – places are strictly limited!
                         </p>
                       </header>

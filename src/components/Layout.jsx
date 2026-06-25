@@ -81,11 +81,11 @@ export default function Layout({ children, lang = 'de' }) {
             <Link to="/medien#cds" className="link" onClick={closeNav}><span className="indent-1"></span>CDs</Link>
             <Link to="/referenzen" className="link depth-0" onClick={closeNav}>Referenzen</Link>
             <span className="link depth-0">Links</span>
-            <a href="https://sites.google.com/view/wwwbahiaconnectionde" className="link" target="_blank" rel="noopener" onClick={closeNav}><span className="indent-1"></span>Bahia Connection</a>
+            <a href="https://bahiaconnection.de" className="link" target="_blank" rel="noopener" onClick={closeNav}><span className="indent-1"></span>Bahia Connection</a>
             <a href="https://fogodosamba.de" className="link" target="_blank" rel="noopener" onClick={closeNav}><span className="indent-1"></span>Fogo Do Samba</a>
             <a href="https://sapucaiu.de" className="link" target="_blank" rel="noopener" onClick={closeNav}><span className="indent-1"></span>Sapucaiu No Samba</a>
             <a href="https://olodum.com.br" className="link" target="_blank" rel="noopener" onClick={closeNav}><span className="indent-1"></span>Olodum</a>
-            <a href="https://musikfabrik.berlin" className="link" target="_blank" rel="noopener" onClick={closeNav}><span className="indent-1"></span>MusikFabrik</a>
+            <a href="https://musikfabrik.berlin/Projekte-in-der-Musikfabrik/Samba-Etage.html" className="link" target="_blank" rel="noopener" onClick={closeNav}><span className="indent-1"></span>MusikFabrik</a>
             <a href="https://www.kalango.com/de" className="link" target="_blank" rel="noopener" onClick={closeNav}><span className="indent-1"></span>Kalango</a>
             <a href="#footer" className="link depth-0" onClick={closeNav}>Kontakt / Buchung</a>
             <Link to="/en" className="link depth-0" onClick={closeNav}>EN</Link>

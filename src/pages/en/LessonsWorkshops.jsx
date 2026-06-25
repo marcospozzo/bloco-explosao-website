@@ -25,20 +25,23 @@ export default function LessonsWorkshops() {
                         the first time it's free to sniff. Instruments and sticks are provided. We regularly offer
                         introductory workshops.
                       </p>
-                      <h3>New beginners course: every Tuesday from 20-22h. Please contact us if you are interested!</h3>
-                      <br />
+                      <p>Beginners course: every Tuesday from 20:00 – 22:00. Please get in touch if you are interested!</p>
                       <p>
                         From rhythmically gifted beginners to experienced drum enthusiasts, everyone is welcome. Fun
                         and appearances are guaranteed. Come over! Relaxed and from the beginning, we will get into
                         the rhythms and techniques of the music of the Afro Blocos from Salvador da Bahia.
                       </p>
                       <p>
-                        On Tuesdays from 8 p.m. to 10 p.m., advanced learners rehearse. There it is quite possible
-                        for experienced players to join.
+                        There is also a group for advanced learners who rehearse regularly. It is quite possible for experienced players to join.
                       </p>
                       <p>
-                        You can also take part in the Carnival of Cultures in Berlin (May / June) every year. All
-                        rehearsals take place on the Samba floor in the Musikfabrik Berlin.
+                        Rehearsal location: SambaEtage, 1st floor of the Musikfabrik, Room A<br />
+                        <a href="https://maps.app.goo.gl/x6aFWGhk8KfwvEwN8" target="_blank" rel="noopener">
+                          Neuköllnische Allee 6-8, 12057 Berlin-Neukölln
+                        </a>
+                      </p>
+                      <p>
+                        You can also take part in the Carnival of Cultures in Berlin (May / June) every year.
                       </p>
                       <p>
                         The groups and workshops are led by the musicians Volker Conrath and VVolf Oliveira.
