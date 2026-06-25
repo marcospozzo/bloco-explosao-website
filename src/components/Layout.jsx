@@ -156,11 +156,11 @@ export default function Layout({ children, lang = 'de' }) {
                   <li className={openDropdown === 'links-de' ? 'open' : ''}>
                     <a href="#" onClick={e => toggleDropdown(e, 'links-de')}>Links</a>
                     <ul>
-                      <li><a href="https://sites.google.com/view/wwwbahiaconnectionde" rel="noopener" target="_blank">Bahia Connection</a></li>
+                      <li><a href="https://bahiaconnection.de" rel="noopener" target="_blank">Bahia Connection</a></li>
                       <li><a href="https://fogodosamba.de" rel="noopener" target="_blank">Fogo Do Samba</a></li>
                       <li><a href="https://sapucaiu.de" rel="noopener" target="_blank">Sapucaiu No Samba</a></li>
                       <li><a href="https://olodum.com.br" rel="noopener" target="_blank">Olodum</a></li>
-                      <li><a href="https://musikfabrik.berlin" rel="noopener" target="_blank">MusikFabrik</a></li>
+                      <li><a href="https://musikfabrik.berlin/Projekte-in-der-Musikfabrik/Samba-Etage.html" rel="noopener" target="_blank">MusikFabrik</a></li>
                       <li><a href="https://www.kalango.com/de" rel="noopener" target="_blank">Kalango</a></li>
                     </ul>
                   </li>
@@ -200,11 +200,11 @@ export default function Layout({ children, lang = 'de' }) {
                   <li className={openDropdown === 'links-en' ? 'open' : ''}>
                     <a href="#" onClick={e => toggleDropdown(e, 'links-en')}>Links</a>
                     <ul>
-                      <li><a href="https://sites.google.com/view/wwwbahiaconnectionde" rel="noopener" target="_blank">Bahia Connection</a></li>
+                      <li><a href="https://bahiaconnection.de" rel="noopener" target="_blank">Bahia Connection</a></li>
                       <li><a href="https://fogodosamba.de" rel="noopener" target="_blank">Fogo Do Samba</a></li>
                       <li><a href="https://sapucaiu.de" rel="noopener" target="_blank">Sapucaiu No Samba</a></li>
                       <li><a href="https://olodum.com.br" rel="noopener" target="_blank">Olodum</a></li>
-                      <li><a href="https://musikfabrik.berlin" rel="noopener" target="_blank">MusikFabrik</a></li>
+                      <li><a href="https://musikfabrik.berlin/Projekte-in-der-Musikfabrik/Samba-Etage.html" rel="noopener" target="_blank">MusikFabrik</a></li>
                       <li><a href="https://www.kalango.com/de" rel="noopener" target="_blank">Kalango</a></li>
                     </ul>
                   </li>

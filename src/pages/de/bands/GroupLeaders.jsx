@@ -46,7 +46,7 @@ export default function GroupLeaders() {
                         <p>
                           Er ist spezialisiert auf die Rhythmen dieser Blocos, und gibt diese in Workshops weiter.
                           2013 gründete er die{' '}
-                          <a rel="noopener" target="_blank" href="https://sites.google.com/view/wwwbahiaconnectionde">Bahia Connection</a>{' '}
+                          <a rel="noopener" target="_blank" href="https://bahiaconnection.de">Bahia Connection</a>{' '}
                           <a rel="noopener" target="_blank" href="https://www.facebook.com/bahiaconnection">bei Facebook</a>{' '}
                           mit dem Ziel, den Samba-Reggae Gruppen in Deutschland eine gemeinsame musikalische Sprache
                           zu geben. Infos sowie Arrangements ausgesuchter original Rhythmen der Afro Blocos aus Bahia
