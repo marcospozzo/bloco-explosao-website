@@ -21,7 +21,7 @@ export default function TripToBrazil() {
                         <h3>Für alle, die mehr suchen als Vorurteile</h3>
                         <p>
                           Die Brasilienreise der Bahia Connection findet wie geplant statt. Termine und Programm
-                          finden sie auf dem PDF{' '}
+                          findet ihr auf dem PDF{' '}
                           <a href="/bands-projekte/PDF-Deutsch-für-HP-Reise2027.pdf" download>Detaillierte Infos</a>.
                           Bei Interesse bitte sofort bei mir melden (begrenzte Teilnehmerzahl).
                         </p>
@@ -35,13 +35,13 @@ export default function TripToBrazil() {
                         Strand, in die Berge. Rio de Janeiro ist wegen der angespannten Sicherheitslage, im Moment
                         nicht im Programm. Das kann sich aber noch ändern.
                       </p>
-                      <p>Die Teilnehmerzahl ist begrenzt. Ich versuche meine Planung nach Ihren Wünschen auszurichten.</p>
-                      <h3>
+                      <p>Die Teilnehmerzahl ist begrenzt. Ich versuche meine Planung nach euren Wünschen auszurichten.</p>
+                      <p>
                         Wir starten die 1. Woche mit 4 Tagen Workshops am Strand in Arembepe, an der Estrada de
                         Coco. In der 2. Woche sind wir in Salvador und werden weitere 4 Tage trommeln. Alle 8
-                        Workshops sind mit den großen Meistern der Afro Blocos aus Bahia! Wenn sie Ihre Reise selbst
-                        organisieren, können Sie nach vorheriger Anmeldung an den Workshops teilnehmen.
-                      </h3>
+                        Workshops sind mit den großen Meistern der Afro Blocos aus Bahia! Falls ihr eure Reise selbst
+                        organisiert, könnt ihr nach vorheriger Absprache und Anmeldung an den Workshops teilnehmen.
+                      </p>
                       <br />
                       <p>
                         Dies ist eine Reise, die euch ermöglicht viel von der afrobrasilianischen Kultur
@@ -65,6 +65,8 @@ export default function TripToBrazil() {
                         das Programm. Meine Betreuung beginnt bei eurer Ankunft in Brasilien. Flüge usw. müsst ihr
                         selber buchen.
                       </p>
+                      <p>aquele abraço</p>
+                      <p>Volker</p>
                     </section>
                   </div>
                 </div>

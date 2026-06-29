@@ -163,11 +163,10 @@ export default function Media() {
                       </div>
                       <div>
                         <p>
-                          Both CDs can be heard on all streaming services. They can be ordered from us (€10 per CD)
-                          or downloaded from CD Baby. You can listen to excerpts on Soundcloud.{' '}
-                          <a href="https://www.amazon.de/Berlin-Perkussiv-Samba-More/dp/B003C8P53E" rel="noopener" target="_blank">Amazon</a>
-                          {' '}&amp;{' '}
-                          <a href="https://soundcloud.com/blocoexplosao" rel="noopener" target="_blank">Soundcloud</a>
+                          Both CDs are available on all streaming services and can be downloaded via{' '}
+                          <a href="https://www.amazon.de/Berlin-Perkussiv-Samba-More/dp/B003C8P53E" rel="noopener" target="_blank">Amazon</a>.
+                          {' '}Excerpts can be heard on{' '}
+                          <a href="https://soundcloud.com/blocoexplosao" rel="noopener" target="_blank">SoundCloud</a>.
                         </p>
                         <p>
                           The 1st CD "Berlin perkussiv; Samba &amp; more" takes you on a musical journey from Berlin

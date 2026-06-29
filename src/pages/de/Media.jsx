@@ -163,12 +163,11 @@ export default function Media() {
                       </div>
                       <div>
                         <p>
-                          Beide CD´s sind auf allen Streamingdiensten zu hören. Sie können bei uns bestellt werden
-                          (10 € pro CD) oder bei CD Baby heruntergeladen werden. Bei Soundcloud kann man Ausschnitte
-                          anhören.{' '}
+                          Beide CD´s sind auf allen Streamingdiensten und können über{' '}
                           <a href="https://www.amazon.de/Berlin-Perkussiv-Samba-More/dp/B003C8P53E" rel="noopener" target="_blank">Amazon</a>
-                          {' '}&amp;{' '}
+                          {' '}heruntergeladen werden. Bei{' '}
                           <a href="https://soundcloud.com/blocoexplosao" rel="noopener" target="_blank">Soundcloud</a>
+                          {' '}sind Ausschnitte zu hören.
                         </p>
                         <p>
                           Die 1. CD „ Berlin perkussiv; Samba &amp; more" führt auf eine musikalische Reise von Berlin
