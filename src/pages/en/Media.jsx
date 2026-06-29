@@ -164,7 +164,7 @@ export default function Media() {
                       <div>
                         <p>
                           Both CDs are available on all streaming services and can be downloaded via{' '}
-                          <a href="https://www.amazon.de/Berlin-Perkussiv-Samba-More/dp/B003C8P53E" rel="noopener" target="_blank">Amazon</a>.
+                          <a href="https://www.amazon.de/music/player/artists/B003C7VH6O/bloco-explos%C3%A3o" rel="noopener" target="_blank">Amazon</a>.
                           {' '}Excerpts can be heard on{' '}
                           <a href="https://soundcloud.com/blocoexplosao" rel="noopener" target="_blank">SoundCloud</a>.
                         </p>

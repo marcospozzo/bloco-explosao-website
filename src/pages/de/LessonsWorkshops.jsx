@@ -38,7 +38,7 @@ export default function LessonsWorkshops() {
                         aus Salvador da Bahia einsteigen.
                       </p>
                       <p>
-                        Dienstag von 19 - 22h Uhr proben die Fortgeschrittenen. Dort ist es für erfahrene Spieler durchaus möglich einzusteigen.
+                        Dienstag, von 18 - 20 Uhr proben die Fortgeschrittenen. Dort ist es für erfahrene Spieler durchaus möglich einzusteigen.
                       </p>
                       <p>
                         Probenort: SambaEtage, 1. Stock der Musikfabrik, Raum A<br />

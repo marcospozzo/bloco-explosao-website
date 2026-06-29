@@ -164,7 +164,7 @@ export default function Media() {
                       <div>
                         <p>
                           Beide CD´s sind auf allen Streamingdiensten und können über{' '}
-                          <a href="https://www.amazon.de/Berlin-Perkussiv-Samba-More/dp/B003C8P53E" rel="noopener" target="_blank">Amazon</a>
+                          <a href="https://www.amazon.de/music/player/artists/B003C7VH6O/bloco-explos%C3%A3o" rel="noopener" target="_blank">Amazon</a>
                           {' '}heruntergeladen werden. Bei{' '}
                           <a href="https://soundcloud.com/blocoexplosao" rel="noopener" target="_blank">Soundcloud</a>
                           {' '}sind Ausschnitte zu hören.
